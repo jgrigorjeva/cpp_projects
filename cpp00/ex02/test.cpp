@@ -21,30 +21,30 @@ int		main( void ) {
 
 	int	const				amounts[]	= { 42, 54, 957, 432, 1234, 0, 754, 16576 };
 	size_t const			amounts_size( sizeof(amounts) / sizeof(int) );
-	accounts_t				accounts( amounts, amounts + amounts_size );
-	accounts_t::iterator	acc_begin	= accounts.begin();
-	accounts_t::iterator	acc_end		= accounts.end();
+	accounts_t				accounts( amounts, amounts + amounts_size ); //create a vector containing accounts with initial deposits. The vector length is same as the length of amounts array
+	accounts_t::iterator	acc_begin	= accounts.begin(); //first element of the accounts vector
+	accounts_t::iterator	acc_end		= accounts.end(); //last element of the accounts vector
 
 	int	const			d[]			= { 5, 765, 564, 2, 87, 23, 9, 20 };
 	size_t const		d_size( sizeof(d) / sizeof(int) );
-	ints_t				deposits( d, d + d_size );
+	ints_t				deposits( d, d + d_size ); //a vector containing deposits for each account
 	ints_t::iterator	dep_begin	= deposits.begin();
 	ints_t::iterator	dep_end		= deposits.end();
 
 	int	const			w[]			= { 321, 34, 657, 4, 76, 275, 657, 7654 };
 	size_t const		w_size( sizeof(w) / sizeof(int) );
-	ints_t				withdrawals( w, w + w_size );
+	ints_t				withdrawals( w, w + w_size ); // a vector containing withdrawals for each account
 	ints_t::iterator	wit_begin	= withdrawals.begin();
 	ints_t::iterator	wit_end		= withdrawals.end();
 
-	Account::displayAccountsInfos();
-	std::for_each( acc_begin, acc_end, std::mem_fun_ref( &Account::displayStatus ) );
+	Account::displayAccountsInfos(); 
+	std::for_each( acc_begin, acc_end, std::mem_fun_ref( &Account::displayStatus ) ); //displays status for each account from the account vector
 
-	for ( acc_int_t it( acc_begin, dep_begin );
+	for ( acc_int_t it( acc_begin, dep_begin ); //couples the elements of the accounts and the deposits vectors
 		  it.first != acc_end && it.second != dep_end;
 		  ++(it.first), ++(it.second) ) {
 
-		(*(it.first)).makeDeposit( *(it.second) );
+		(*(it.first)).makeDeposit( *(it.second) ); //makes the deposits to the accounts
 	}
 
 	Account::displayAccountsInfos();
@@ -54,7 +54,7 @@ int		main( void ) {
 		  it.first != acc_end && it.second != wit_end;
 		  ++(it.first), ++(it.second) ) {
 
-		(*(it.first)).makeWithdrawal( *(it.second) );
+		(*(it.first)).makeWithdrawal( *(it.second) ); //makes withdrawals from the accounts
 	}
 
 	Account::displayAccountsInfos();
