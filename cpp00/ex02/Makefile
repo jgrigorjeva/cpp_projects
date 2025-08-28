@@ -6,7 +6,7 @@ CXXFLAGS= -Wall -Wextra -Werror -std=c++98 -MMD -MP
 NAME    = test
 
 # Source and object
-SRC     = Account.cpp test.cpp
+SRC     = Account.cpp tests.cpp
 OBJ     = $(SRC:.cpp=.o)
 DEP      = $(SRC:.cpp=.d)
 
