@@ -16,6 +16,8 @@ void PhoneBook::add_contact(Contact c)
     std::cout << "Contact added to position: " << pos <<std::endl;
 }
 
+static std::string trunc_if_long(std::string);
+
 void PhoneBook::view_contacts()
 {
     int pos;
@@ -47,7 +49,7 @@ bool PhoneBook::index_invalid(int contact_ID)
 	return (contact_ID < 0 || contact_ID > count - 1);
 }
 
-std::string trunc_if_long(std::string str)
+static std::string trunc_if_long(std::string str)
 {
     if (str.length() <= 10)
         return (str);
@@ -56,3 +58,4 @@ std::string trunc_if_long(std::string str)
         return (str.substr(0, 9) + ".");
     }
 }
+

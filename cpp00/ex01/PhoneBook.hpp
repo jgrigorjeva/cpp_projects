@@ -22,6 +22,6 @@ public:
 
 };
 
-std::string trunc_if_long(std::string);
+// static std::string trunc_if_long(std::string);
 
 #endif

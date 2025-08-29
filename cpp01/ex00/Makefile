@@ -1,13 +1,12 @@
 # Compiler and flags
 CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98 -MMD -MP 
-# -MMD -MP are for creating dependencies on header files
 
 # Target
-NAME    = phonebook
+NAME    = zombie
 
 # Source and object
-SRC     = Contact.cpp PhoneBook.cpp main.cpp
+SRC     = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 OBJ     = $(SRC:.cpp=.o)
 DEP      = $(SRC:.cpp=.d)
 

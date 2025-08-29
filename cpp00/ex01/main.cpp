@@ -3,8 +3,9 @@
 #include <limits>
 #include "Color.hpp"
 
-void	get_contact_info(std::string contact_info[]);
+bool	get_contact_info(std::string contact_info[]);
 bool handle_cin_errors(std::string &try_again, int contact_ID, PhoneBook book);
+static bool handle_eof();
 
 int main()
 {
@@ -18,12 +19,18 @@ int main()
     {
         std::cout << Color::bblue << "Type command: ADD | SEARCH | EXIT" << std::endl << "> " << Color::reset;
 		std::getline(std::cin, action);
+		if (handle_eof())
+		{
+			std::cout << "EOF detected, exiting...\n";
+			break;
+		}
 		std::cout << std::endl;
 		if (action == "EXIT")
-			return (0);
+			break;
 		if (action == "ADD")
 		{
-			get_contact_info(contact_info);	
+			if (!get_contact_info(contact_info))
+				break;
 			contact = Contact(contact_info[0], contact_info[1], contact_info[2], contact_info[3], contact_info[4]);
 			book.add_contact(contact);
 		}
@@ -46,7 +53,7 @@ int main()
     }
 }
 
-void	get_contact_info(std::string contact_info[])
+bool	get_contact_info(std::string contact_info[])
 {
 	std::string prompt_part[] = {"first name", "last name", "nick name", "phone number", "darkest secret"};
 
@@ -54,8 +61,14 @@ void	get_contact_info(std::string contact_info[])
 	{
 		std::cout << Color::bgreen << "Insert contact " << prompt_part[i] << std::endl << "> " << Color::reset;
 		std::getline(std::cin, contact_info[i]);
+		if (handle_eof())
+		{
+			std::cout << "EOF detected, exiting...\n";
+			return false;
+		}
 	}
 	std::cout << std::endl;
+	return true;
 }
 
 bool handle_cin_errors(std::string &try_again, int contact_ID, PhoneBook book)
@@ -77,4 +90,12 @@ bool handle_cin_errors(std::string &try_again, int contact_ID, PhoneBook book)
 		return (1);
 	}
 	return (0);
+}
+
+static bool handle_eof() {
+    if (std::cin.eof()) 
+	{
+        return true; // signal EOF
+    }
+    return false;
 }
