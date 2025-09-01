@@ -3,7 +3,7 @@
 
 Zombie::Zombie(std::string name)
 {
-    std::cout << "default constructor" << std::endl;
+    // std::cout << "default constructor" << std::endl;
     this->_name = name;
 }
 

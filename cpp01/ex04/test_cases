@@ -1,0 +1,16 @@
+Test cases:
+
+// empty string to replace
+./sedIsForLosers test "" "aad"
+
+// empty replacement string (just delete words)
+./sedIsForLosers test "hello" ""
+
+// no matching string
+./sedIsForLosers test "Hello123 " "what?"
+
+// change rights
+chmod -r test
+chmod -w test.replace
+
+// long text loremIpsum 10 paragraphs

@@ -1,6 +1,8 @@
 #include "Zombie.hpp"
 #include <iostream>
 
+Zombie::Zombie(){}
+
 Zombie::Zombie(std::string name)
 {
     // std::cout << "default constructor" << std::endl;
