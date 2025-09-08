@@ -33,7 +33,7 @@ Fixed &Fixed::operator=(const Fixed &other)
 	{
 		this->_raw_bits = other._raw_bits; //can go with just _raw_bits instead of this->_raw_bits, but making it explicit for clarity
 	}
-	std::cout << "Copy assignment operator called!" << std::endl;
+	std::cout << "Copy assignment operator called" << std::endl;
 	return (*this); // Required for chaining
 }
 

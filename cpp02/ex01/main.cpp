@@ -8,7 +8,9 @@ int	main(void)
 	Fixed const c(42.42f);
 	Fixed const d(b);
 	a = Fixed(1234.4321f);
-	std::cout << "a is " << a << std::endl;
+	// a = Fixed(1234.5321f); //rounding showcase
+    // a = Fixed(-1234.5321f); //rounding showcase
+    std::cout << "a is " << a << std::endl;
 	std::cout << "b is " << b << std::endl;
 	std::cout << "c is " << c << std::endl;
 	std::cout << "d is " << d << std::endl;
