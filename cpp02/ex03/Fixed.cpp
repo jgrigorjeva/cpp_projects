@@ -4,18 +4,18 @@
 
 Fixed::Fixed(): _raw_bits(0)
 {
-	std::cout << "Default costructor called\n";
+	// std::cout << "Default costructor called\n";
 }
 
 Fixed::Fixed(const int num)
 {
-	std::cout << "Int constructor called\n";
+	// std::cout << "Int constructor called\n";
 	_raw_bits = num << _fract_bits;
 }
 
 Fixed::Fixed(const float num)
 {
-	std::cout << "Float constructor called\n";
+	// std::cout << "Float constructor called\n";
 	_raw_bits = static_cast<int>(roundf(num * (1 << _fract_bits)));
 	// shifts the "decimal" point to the right by _frac_bits and makes the resulting float an integer for storing
 }
@@ -23,7 +23,7 @@ Fixed::Fixed(const float num)
 
 Fixed::Fixed(const Fixed &other): _raw_bits(other._raw_bits)
 {
-	std::cout << "Copy costructor called\n";
+	// std::cout << "Copy costructor called\n";
 }
 
 
@@ -33,25 +33,25 @@ Fixed &Fixed::operator=(const Fixed &other)
 	{
 		this->_raw_bits = other._raw_bits; //can go with just _raw_bits instead of this->_raw_bits, but making it explicit for clarity
 	}
-	std::cout << "Copy assignment operator called" << std::endl;
+	// std::cout << "Copy assignment operator called" << std::endl;
 	return (*this); // Required for chaining
 }
 
 Fixed::~Fixed()
 {
-	std::cout << "Destructor called\n";
+	// std::cout << "Destructor called\n";
 }
 
 int Fixed::getRawBits( void ) const
 {
-	std::cout << "getRawBits member function called\n";
+	// std::cout << "getRawBits member function called\n";
 	return (_raw_bits);
 }
 
 void Fixed::setRawBits( int const raw )
 {
 	_raw_bits = raw;
-	std::cout << "setRawBits member function called\n";
+	// std::cout << "setRawBits member function called\n";
 }
 
 float Fixed::toFloat( void ) const

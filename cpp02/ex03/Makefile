@@ -6,7 +6,7 @@ CXXFLAGS= -Wall -Wextra -Werror -std=c++98 -MMD -MP
 NAME    = fixed
 
 # Source and object
-SRC     = main.cpp Fixed.cpp
+SRC     = main.cpp Fixed.cpp Point.cpp bsp.cpp
 OBJ     = $(SRC:.cpp=.o)
 DEP      = $(SRC:.cpp=.d)
 
