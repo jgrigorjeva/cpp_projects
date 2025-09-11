@@ -36,6 +36,11 @@ int main()
 		}
 		if (action == "SEARCH")
 		{
+			if (!book.get_count())
+			{
+				std::cout << "Phone Book is empty\n";
+				continue ;
+			}
 			book.view_contacts();
 			std::string try_again = "yes";
 			while (try_again == "yes")

@@ -19,6 +19,7 @@ public:
 	void view_contacts();
 	void view_single_contact(int);
 	bool index_invalid(int);
+    int get_count();
 
 };
 

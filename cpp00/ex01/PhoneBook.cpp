@@ -7,13 +7,18 @@ PhoneBook::~PhoneBook()
 
 void PhoneBook::add_contact(Contact c)
 {
+    if (c.info_not_filled())
+    {
+        std::cout << "Not all contact details have been filled, contact not added\n";
+        return ;
+    }
     int pos = (head + count)% MAX_CONTACTS;
     contacts[pos] = c;
     if (count < MAX_CONTACTS)
         count++;
     else
         head = (head + 1) % MAX_CONTACTS;
-    std::cout << "Contact added to position: " << pos <<std::endl;
+    std::cout << "Contact added" << std::endl;
 }
 
 static std::string trunc_if_long(std::string);
@@ -59,3 +64,7 @@ static std::string trunc_if_long(std::string str)
     }
 }
 
+int PhoneBook::get_count()
+{
+    return (count);
+}
