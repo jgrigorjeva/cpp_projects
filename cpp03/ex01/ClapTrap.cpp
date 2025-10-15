@@ -2,11 +2,13 @@
 
 //constructors
 ClapTrap::ClapTrap(): _hit_points(10), _energy_points(10), _attack_damage(0)
-{}
+{
+    std::cout << "Clap default constructor called\n";
+}
 
 ClapTrap::ClapTrap(std::string name): _name(name), _hit_points(10), _energy_points(10), _attack_damage(0)
 {
-
+    std::cout << "Clap parametrized constructor called\n";
 }
 
 
@@ -17,7 +19,7 @@ _name(name), _hit_points(hit_points), _energy_points(energy_points), _attack_dam
 ClapTrap::ClapTrap(const ClapTrap& other): _name(other._name), _hit_points(other._hit_points), 
 _energy_points(other._energy_points), _attack_damage(other._attack_damage)
 {
-
+    std::cout << "Clap copy constructor called\n";
 }
 ClapTrap &ClapTrap::operator=(const ClapTrap &other)
 {
@@ -28,12 +30,14 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other)
         this->_energy_points = other._energy_points;
         this->_attack_damage = other._attack_damage;
     }
-	// std::cout << "Copy assignment operator called!" << std::endl;
+	std::cout << "Clap copy assignment operator called!" << std::endl;
 	return (*this); 
 
 }
 
-ClapTrap::~ClapTrap(){}
+ClapTrap::~ClapTrap(){
+    std::cout << "Clap destructor called\n";
+}
 
 // functions
 void ClapTrap::attack(const std::string& target)
