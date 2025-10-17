@@ -30,7 +30,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other)
         this->_energy_points = other._energy_points;
         this->_attack_damage = other._attack_damage;
     }
-	std::cout << "Copy assignment operator called!" << std::endl;
+	std::cout << "Clap copy assignment operator called!" << std::endl;
 	return (*this); 
 
 }
@@ -43,10 +43,14 @@ ClapTrap::~ClapTrap(){
 void ClapTrap::attack(const std::string& target)
 {
     if (this->_hit_points <= 0 || this->_energy_points <= 0)
+    {
+        std::cout << "Too weak or injured. Can't attack.\n";
         return ;
+    }
     std::cout<< "ClapTrap " << this->_name << " attacks " << target << ", causing " << this->_attack_damage << " points of damage!\n";
     (this->_energy_points)--;
 }
+
 void ClapTrap::takeDamage(unsigned int amount)
 {
     (this->_hit_points) -= amount;

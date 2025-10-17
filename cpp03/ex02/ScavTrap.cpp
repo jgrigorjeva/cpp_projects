@@ -39,8 +39,11 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::attack(const std::string& target)
 {
-    if (_hit_points <= 0 || _hit_points <= 0)
+    if (this->_hit_points <= 0 || this->_energy_points <= 0)
+    {
+        std::cout << "Too weak or injured. Can't attack.\n";
         return ;
+    }
     std::cout<< "ScavpTrap " << _name << " attacks " << target << ", causing " << _attack_damage << " points of damage!\n";
     _energy_points = _energy_points - 1;
 }
