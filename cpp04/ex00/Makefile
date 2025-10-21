@@ -3,10 +3,10 @@ CXX     = c++
 CXXFLAGS= -Wall -Wextra -Werror -std=c++98 -MMD -MP 
 
 # Target
-NAME    = frag
+NAME    = test
 
 # Source and object
-SRC     = main.cpp Animal.cpp
+SRC     = main.cpp Animal.cpp Cat.cpp
 OBJ     = $(SRC:.cpp=.o)
 DEP      = $(SRC:.cpp=.d)
 
