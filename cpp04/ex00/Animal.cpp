@@ -28,11 +28,11 @@ Animal::~Animal()
 }
 
 // methods
-std::string Animal::getType()
+std::string Animal::getType() const
 {
     return (_type);
 }
-void Animal::makeSound()
+void Animal::makeSound() const
 {
     std::cout << "Generic animal sound\n";
 }

@@ -6,7 +6,7 @@ CXXFLAGS= -Wall -Wextra -Werror -std=c++98 -MMD -MP
 NAME    = test
 
 # Source and object
-SRC     = main.cpp Animal.cpp Cat.cpp
+SRC     = main.cpp Animal.cpp Cat.cpp Dog.cpp
 OBJ     = $(SRC:.cpp=.o)
 DEP      = $(SRC:.cpp=.d)
 

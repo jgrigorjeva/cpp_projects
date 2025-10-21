@@ -1,17 +1,17 @@
-#ifndef CAT
-#define CAT
+#ifndef DOG
+#define DOG
 
 #include "Animal.hpp"
-class Cat : public Animal
+class Dog : public Animal
 {
     // in c++11, it is possible to inherit constructors like this:
     // Animal::Animal;
     public:
-        Cat();
-        Cat(std::string type);
-        Cat(const Cat &other);
-        Cat &operator=(const Cat &other);
-        ~Cat();
+        Dog();
+        Dog(std::string type);
+        Dog(const Dog &other);
+        Dog &operator=(const Dog &other);
+        ~Dog();
         // members
         void makeSound() const;
 };
