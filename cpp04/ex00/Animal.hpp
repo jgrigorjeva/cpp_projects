@@ -3,6 +3,10 @@
 
 #include <iostream>
 
+// the destructor has to be virtual, otherwise:
+// "deleting object of polymorphic class type ‘Animal’ which has non-virtual destructor might cause undefined behavior"
+// If the destructor is non-virtual, only the Animal destructor will be called 
+
 class Animal
 {
     protected:
