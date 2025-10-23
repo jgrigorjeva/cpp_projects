@@ -1,29 +1,36 @@
 # Compiler and flags
-CXX     = c++
-CXXFLAGS= -Wall -Wextra -Werror -std=c++98 -MMD -MP 
+CXX      = c++
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD -MP
 
 # Target
-NAME    = test
+NAME     = test
 
 # Source and object
-SRC     = main.cpp Animal.cpp Cat.cpp Dog.cpp
-OBJ     = $(SRC:.cpp=.o)
-DEP      = $(SRC:.cpp=.d)
+SRC      = main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp
+OBJ_DIR  = obj
+OBJ      = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRC))
+DEP      = $(patsubst %.cpp,$(OBJ_DIR)/%.d,$(SRC))
 
 # Rules
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CXX) -o $(NAME) $(OBJ)
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJ)
 
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+# Create object directory (if missing)
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+
+# Compile rule: write .o into obj/ and .d into obj/
+$(OBJ_DIR)/%.o: %.cpp | $(OBJ_DIR)
+	$(CXX) $(CXXFLAGS) -c $< -o $@ -MF $(OBJ_DIR)/$*.d
 
 clean:
-	rm -f $(OBJ) $(DEP)
+	$(RM) $(OBJ) $(DEP)
+	$(RM) -r $(OBJ_DIR)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 
