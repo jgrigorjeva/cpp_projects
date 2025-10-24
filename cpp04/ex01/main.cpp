@@ -47,6 +47,7 @@ int	main(void)
 	{
 		if (i%2)
 		{
+			// the *dynamic_cast<Cat*> is necessary for the copy constructor, otherwise *animals[i] is of type Animal* and we need the type Cat* in the copy constructor
 			copy_animals[i] = new Cat(*dynamic_cast<Cat*>(animals[i]));
 			copy_animals[i]->makeSound();
 			std::cout << BOLD << copy_animals[i]->get_idea(0) << RST << std::endl;
