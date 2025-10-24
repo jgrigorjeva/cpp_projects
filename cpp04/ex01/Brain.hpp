@@ -13,8 +13,8 @@ class Brain
     Brain();
     Brain(std::string ideas[100]);
     Brain(const Brain& other);
-
     ~Brain();
+    Brain &operator=(const Brain& other);
     // setters
     void set_idea(int index, std::string idea);
 

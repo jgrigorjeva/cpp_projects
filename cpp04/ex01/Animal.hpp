@@ -21,6 +21,9 @@ class Animal
         // methods
         std::string getType() const;
         virtual void makeSound() const;
+        // my additions to be used in derived classes
+        virtual void set_idea(int index, std::string idea){(void)index, (void)idea;};
+        virtual std::string get_idea(int index) const { (void)index; return NULL; };
 
 };
 
