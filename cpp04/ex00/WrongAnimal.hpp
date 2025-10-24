@@ -2,6 +2,7 @@
 #define WRONG_ANIMAL
 
 #include <iostream>
+#include "Colors.hpp"
 
 // the destructor has to be virtual, otherwise:
 // "deleting object of polymorphic class type ‘Animal’ which has non-virtual destructor might cause undefined behavior"

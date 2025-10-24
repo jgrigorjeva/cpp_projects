@@ -4,19 +4,19 @@
 Dog::Dog()
 {
     this->_type = "Dog";
-    std::cout << "Default Dog constructor called\n";
+    std::cout << BG << "Default Dog constructor called\n" << RST;
 }
 
 
 Dog::Dog(std::string type)
 {
     this->_type = type;
-    std::cout << "Parametrized Dog constructor called\n";
+    std::cout << BG << "Parametrized Dog constructor called\n" << RST;
 }
 Dog::Dog(const Dog &other): Animal(other._type)
 {
     this->_type = other._type;
-    std::cout << "Dog copy constructor called\n";
+    std::cout << BG << "Dog copy constructor called\n" << RST;
 }
 Dog &Dog::operator=(const Dog &other)
 {
@@ -29,9 +29,9 @@ Dog &Dog::operator=(const Dog &other)
 }
 Dog::~Dog()
 {
-    std::cout << "Dog destructor called\n";
+    std::cout << BR << "Dog destructor called\n" << RST;
 }
 void Dog::makeSound() const
 {
-    std::cout << "Woof\n";
+    std::cout << BB << "Woof\n" << RST;
 }

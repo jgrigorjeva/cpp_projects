@@ -2,15 +2,15 @@
 
 WrongAnimal::WrongAnimal()
 {
-    std::cout << "WrongAnimal default constructor\n";
+    std::cout << G<< "WrongAnimal default constructor\n" << RST;
 }
 WrongAnimal::WrongAnimal(std::string type): _type(type)
 {
-    std::cout << "WrongAnimal parametrized constructor\n";
+    std::cout << G <<"WrongAnimal parametrized constructor\n" << RST;
 }
 WrongAnimal::WrongAnimal(const WrongAnimal& other): _type(other._type)
 {
-    std::cout << "WrongAnimal copy constructor\n";
+    std::cout << G<< "WrongAnimal copy constructor\n" << RST;
 }
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal& other)
 {
@@ -24,7 +24,7 @@ WrongAnimal &WrongAnimal::operator=(const WrongAnimal& other)
 
 WrongAnimal::~WrongAnimal()
 {
-    std::cout << "WrongAnimal destructor\n";
+    std::cout << R << "WrongAnimal destructor\n" << RST;
 }
 
 // methods
@@ -34,5 +34,5 @@ std::string WrongAnimal::getType() const
 }
 void WrongAnimal::makeSound() const
 {
-    std::cout << "Generic WrongAnimal sound\n";
+    std::cout << B << "Generic WrongAnimal sound\n" << RST;
 }

@@ -4,14 +4,14 @@
 Cat::Cat()
 {
     this->_type = "Cat";
-    std::cout << "Default Cat constructor called\n";
+    std::cout << BG << "Default Cat constructor called\n" << RST;
 }
 
 
 Cat::Cat(std::string type)
 {
     this->_type = type;
-    std::cout << "Parametrized Cat constructor called\n";
+    std::cout << BG<< "Parametrized Cat constructor called\n" << RST;
 }
 Cat::Cat(const Cat &other): Animal(other._type)
 {
@@ -29,9 +29,9 @@ Cat &Cat::operator=(const Cat &other)
 }
 Cat::~Cat()
 {
-    std::cout << "Cat destructor called\n";
+    std::cout << BR << "Cat destructor called\n" << RST;
 }
 void Cat::makeSound() const
 {
-    std::cout << "Meow\n";
+    std::cout << BB <<"Meow\n" << RST;
 }

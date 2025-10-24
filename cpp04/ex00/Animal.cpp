@@ -2,15 +2,15 @@
 
 Animal::Animal()
 {
-    std::cout << "Animal default constructor\n";
+    std::cout << G<<"Animal default constructor\n" << RST;
 }
 Animal::Animal(std::string type): _type(type)
 {
-    std::cout << "Animal parametrized constructor\n";
+    std::cout << G<<"Animal parametrized constructor\n" << RST;
 }
 Animal::Animal(const Animal& other): _type(other._type)
 {
-    std::cout << "Animal copy constructor\n";
+    std::cout <<  G<<"Animal copy constructor\n" << RST;
 }
 Animal &Animal::operator=(const Animal& other)
 {
@@ -24,7 +24,7 @@ Animal &Animal::operator=(const Animal& other)
 
 Animal::~Animal()
 {
-    std::cout << "Animal destructor\n";
+    std::cout << R << "Animal destructor\n" << RST;
 }
 
 // methods
@@ -34,5 +34,5 @@ std::string Animal::getType() const
 }
 void Animal::makeSound() const
 {
-    std::cout << "Generic animal sound\n";
+    std::cout << B << "Generic animal sound\n" << RST;
 }

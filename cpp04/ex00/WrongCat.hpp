@@ -2,6 +2,8 @@
 #define WRONG_CAT
 
 #include "WrongAnimal.hpp"
+#include "Colors.hpp"
+
 class WrongCat : public WrongAnimal
 {
     // in c++11, it is possible to inherit constructors like this:

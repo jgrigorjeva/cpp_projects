@@ -2,6 +2,8 @@
 #define DOG
 
 #include "Animal.hpp"
+#include "Colors.hpp"
+
 class Dog : public Animal
 {
     // in c++11, it is possible to inherit constructors like this:
