@@ -18,7 +18,7 @@ Brain::Brain(const Brain& other)
     }
     std::cout << BG << "Brain copy constructor called\n" << RST;
 }
-Brain::~Brain(){ std::cout << BR << "Brain default destructor called\n" << RST; }
+Brain::~Brain(){ std::cout <<  BOLD<< MAGENTA << "Brain destructor called\n" << RST; }
 
 Brain &Brain::operator=(const Brain& other)
 {
@@ -29,7 +29,7 @@ Brain &Brain::operator=(const Brain& other)
             _ideas[i] = other._ideas[i];
         }
     }
-    std::cout << "Brain copy assignment constructor called\n";
+    std::cout << "Brain copy assignment operator called\n";
     return *this;
 }
 
@@ -40,9 +40,9 @@ void Brain::set_idea(int index, std::string idea)
     _ideas[index] = idea;
 }
 
-std::string Brain::get_idea(int index)
+std::string Brain::get_idea(int index) const
 {
     if (index < 0 || index >= 100) 
-        return NULL;
+        return "";
     return (_ideas[index]);
 }

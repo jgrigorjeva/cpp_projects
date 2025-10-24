@@ -17,11 +17,11 @@ Cat::Cat(std::string type)
 }
 Cat::Cat(const Cat &other): Animal(other._type)
 {
-    this->_brain = new Brain();
-    for (int i=0; i < 100; i++)
-    {
-        this->set_idea(i, other.get_idea(i));
-    }
+    this->_brain = new Brain(*other._brain);
+    // for (int i=0; i < 100; i++)
+    // {
+    //     this->set_idea(i, other.get_idea(i));
+    // }
     this->_type = other._type;
     std::cout << "Cat copy constructor called\n";
 }
@@ -29,18 +29,21 @@ Cat::Cat(const Cat &other): Animal(other._type)
 Cat &Cat::operator=(const Cat &other)
 {
     
-    std::cout << "Cat copy assignment constructor called\n";
+    std::cout << "Cat copy assignment operator called\n";
     if (this != &other)
     {
-        this->_brain = new Brain();
-        for (int i=0; i < 100; i++)
-        {
-            this->set_idea(i, other.get_idea(i));
-        }
+        if (_brain)
+            delete _brain;
+        this->_brain = new Brain(*other._brain);
+        // for (int i=0; i < 100; i++)
+        // {
+        //     this->set_idea(i, other.get_idea(i));
+        // }
         this->_type = other._type;
     }
     return *this;
 }
+
 Cat::~Cat()
 {
     delete _brain;

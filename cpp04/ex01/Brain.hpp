@@ -19,7 +19,7 @@ class Brain
     void set_idea(int index, std::string idea);
 
     // getters
-    std::string get_idea(int);
+    std::string get_idea(int) const;
 
 };
 

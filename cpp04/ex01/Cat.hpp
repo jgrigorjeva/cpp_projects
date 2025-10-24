@@ -19,7 +19,7 @@ class Cat : public Animal
         ~Cat();
         // members
         void makeSound() const;
-        void set_idea(int index, std::string idea);
+        void set_idea(int index, const std::string idea);
         std::string get_idea(int index) const;
 
 

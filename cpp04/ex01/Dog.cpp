@@ -31,6 +31,8 @@ Dog &Dog::operator=(const Dog &other)
     std::cout << "Dog copy assignment constructor called\n";
     if (this != &other)
     {
+        if (_brain)
+            delete _brain;
         this->_brain = new Brain();
         for (int i=0; i < 100; i++)
         {
