@@ -35,10 +35,6 @@ Cat &Cat::operator=(const Cat &other)
         if (_brain)
             delete _brain;
         this->_brain = new Brain(*other._brain);
-        // for (int i=0; i < 100; i++)
-        // {
-        //     this->set_idea(i, other.get_idea(i));
-        // }
         this->_type = other._type;
     }
     return *this;
