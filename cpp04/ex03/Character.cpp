@@ -50,3 +50,16 @@ Character::~Character()
     }
     std::cout << BR << "Character destructor\n" << RST;
 }
+
+// members overwrite
+void Character::use(int idx, ICharacter& target)
+{
+    if (idx < 0 || idx > 3 || !inventory[idx])
+        return ;
+    inventory[idx]->use(target);
+}
+
+void unequip(int idx)
+{
+    
+}

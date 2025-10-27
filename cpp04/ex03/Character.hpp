@@ -16,6 +16,9 @@ class Character : public ICharacter
 	Character(const Character &other);
 	Character &operator=(const Character &other);
 	~Character();
+    // member overwrite
+    void use(int idx, ICharacter& target);
+    void unequip(int idx);
 
 };
 
