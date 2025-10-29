@@ -3,20 +3,21 @@
 
 AMateria::AMateria()
 {
-	std::cout << BG << "AMateria default constructor\n" << RST;
+	// std::cout << BG << "AMateria default constructor\n" << RST;
 }
 AMateria::AMateria(std::string const & type)
 {
-	std::cout << BG << "AMateria parametrized constructor\n" << RST;
+	// std::cout << BG << "AMateria parametrized constructor\n" << RST;
 	_type = type;
 }
-AMateria::AMateria(const AMateria &other): AMateria(other._type)
+AMateria::AMateria(const AMateria &other)
 {
-	std::cout << BG << "AMateria copy constructor\n" << RST;
+	_type = other._type;
+	// std::cout << BG << "AMateria copy constructor\n" << RST;
 }
 AMateria &AMateria::operator=(const AMateria &other)
 {
-	std::cout << G << "AMateria copy assignment operator\n" << RST;
+	// std::cout << G << "AMateria copy assignment operator\n" << RST;
 	if (this != &other)
 	{
 		this->_type = other._type;
@@ -26,7 +27,7 @@ AMateria &AMateria::operator=(const AMateria &other)
 
 AMateria::~AMateria()
 {
-	std::cout << BR << "AMateria destructor\n" << RST;
+	// std::cout << BR << "AMateria destructor\n" << RST;
 }
 
 std::string const & AMateria::getType() const
@@ -36,5 +37,5 @@ std::string const & AMateria::getType() const
 
 void AMateria::use(ICharacter& target)
 {
-	std::cout  << "AMateria default use message\n";
+	std::cout  << "AMateria default use on" << target.getName() << std::endl;
 }

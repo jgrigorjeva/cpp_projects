@@ -1,18 +1,19 @@
 #include "Ground.hpp"
 #include "AMateria.hpp"
 
-Ground::Ground(): _items(nullptr), _item_count(0), _capacity(4)
+Ground::Ground(): _item_count(0), _capacity(4), items(NULL)
 {
+    items = new AMateria*[_capacity];
 }
 
-Ground::Ground(const Ground &other): _items(nullptr), _item_count(0), _capacity(4)
+Ground::Ground(const Ground &other): _item_count(0), _capacity(4), items(NULL)
 {
     if (other._item_count > 0)
     {
         _capacity = other._item_count;
-        _items = new AMateria*[_capacity];
+        items = new AMateria*[_capacity];
         for (int i = 0; i < other._item_count; i++)
-            _items[i] = other._items[i];
+            items[i] = other.items[i];
         _item_count = other._item_count;
     }
 }
@@ -22,17 +23,17 @@ Ground &Ground::operator=(const Ground &other)
     if (this != &other)
     {
         cleanup();
-        delete[] _items;
-        _items = nullptr;
+        delete[] items;
+        items = NULL;
         _capacity = 0;
         _item_count = 0;
 
         if (other._item_count > 0)
         {
             _capacity = other._item_count;
-            _items = new AMateria*[_capacity];
+            items = new AMateria*[_capacity];
             for (int i = 0; i < other._item_count; i++)
-                _items[i] = other._items[i];
+                items[i] = other.items[i];
             _item_count = other._item_count;
         }
     }
@@ -42,15 +43,15 @@ Ground &Ground::operator=(const Ground &other)
 Ground::~Ground()
 {
     cleanup();
-    delete[] _items;
+    delete[] items;
 }
 
 void Ground::cleanup()
 {
     for (int i=0; i < _item_count; i++)
     {
-        delete _items[i];
-        _items[i] = nullptr;
+        delete items[i];
+        items[i] = NULL;
     }
     _item_count = 0;
 }
@@ -65,7 +66,7 @@ void Ground::storeMateria(AMateria* m)
         int newCapacity = _capacity * 2;
         _resize(newCapacity);
     }
-    _items[_item_count++] = m;
+    items[_item_count++] = m;
     std::cout << "[Ground] Stored " << m->getType()
               << " materia (total: " << _item_count << ")\n";
 }
@@ -74,8 +75,13 @@ void Ground::_resize(int newCapacity)
 {
     AMateria **newArray = new AMateria*[newCapacity];
     for (int i = 0; i < _item_count; i++)
-        newArray[i] = _items[i];
-    delete[] _items;
-    _items = newArray;
+        newArray[i] = items[i];
+    delete[] items;
+    items = newArray;
     _capacity = newCapacity;
+}
+
+int Ground::get_count()
+{
+    return (_item_count);
 }

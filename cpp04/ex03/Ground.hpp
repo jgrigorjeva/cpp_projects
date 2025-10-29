@@ -6,7 +6,6 @@
 class Ground
 {
     private:
-    AMateria **_items;
     int _item_count;
     int _capacity;
 
@@ -17,7 +16,8 @@ class Ground
     Ground(const Ground &other);
     ~Ground();
     Ground &operator=(const Ground &other);
-    
+    AMateria **items;
+    int get_count();
     void storeMateria(AMateria* m);
     void cleanup();
     
