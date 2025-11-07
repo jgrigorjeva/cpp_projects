@@ -61,12 +61,12 @@ void Bureaucrat::lowerGrade()
 }
 
 // exceptions
-const char* Bureaucrat::GradeTooHighException::what()
+const char* Bureaucrat::GradeTooHighException::what() const throw()
 {
     return (BR "Grade is too high!" RST);
 }
 
-const char* Bureaucrat::GradeTooLowException::what()
+const char* Bureaucrat::GradeTooLowException::what() const throw()
 {
     return (BR "Grade is too low!" RST);
 }

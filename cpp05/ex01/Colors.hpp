@@ -1,4 +1,5 @@
-#pragma once
+#ifndef COLORS
+#define COLORS
 
 // COLORS
 #define BG		"\033[1;32m"
@@ -13,3 +14,5 @@
 #define C        "\033[0;36m"
 #define RST		"\033[0m"
 #define BOLD     "\033[1m"
+
+#endif

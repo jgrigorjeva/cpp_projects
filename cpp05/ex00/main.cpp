@@ -10,9 +10,15 @@ int main()
     Bureaucrat bob("Bob", 1);
     Bureaucrat poor_pete("Petr", 150);
     Bureaucrat plain_jane("Jane", 80);
+    Bureaucrat jane2(plain_jane);
+    Bureaucrat jane3;
+    jane3   = plain_jane;
     std::cout << bob;
     std::cout << poor_pete;
     std::cout <<plain_jane;
+    std::cout << BOLD "*** these are a copy and a \"=\" of Jane ***" RST << std::endl;
+    std::cout <<jane2;
+    std::cout << jane3;
 
     std::cout << BOLD "\n*** create invalid bureaucrats ***" RST << std::endl;
     try 

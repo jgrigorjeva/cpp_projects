@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BUREAUCRAT
+#define BUREAUCRAT
 #include <iostream>
 #include <exception>
 #define TOPGRADE 1
@@ -25,12 +26,12 @@ class Bureaucrat
     class GradeTooHighException : public std::exception 
     {
         public:
-        const char* what();
+        const char*		what() const throw();
     };
     class GradeTooLowException : public std::exception 
     {
         public:
-        const char* what();
+        const char*		what() const throw();
     };
     
 
@@ -38,3 +39,5 @@ class Bureaucrat
 
 // operator overload
 std::ostream& operator<<(std::ostream& out, const Bureaucrat& src);
+
+#endif

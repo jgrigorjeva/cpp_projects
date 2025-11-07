@@ -95,3 +95,37 @@ public:
 
 FileError e("config.txt");
 std::cout << e.what() << '\n';
+
+***
+2. I was using this class definition at home and it worked fine:
+class GradeTooHighException : public std::exception 
+{
+    public:
+    const char* what();
+};
+
+But on school computers, it threw this compilation error: 
+In file included from main.cpp:2:
+./Bureaucrat.hpp:28:29: error: 'Bureaucrat::GradeTooHighException::what' hides overloaded virtual function [-Werror,-Woverloaded-virtual]
+        virtual const char* what();
+                            ^
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception.h:76:5: note: hidden overloaded virtual function 'std::exception::what' declared here: different qualifiers ('const' vs unqualified)
+    what() const _GLIBCXX_TXN_SAFE_DYN _GLIBCXX_NOTHROW;
+
+So, had to change the class definition to:
+
+class GradeTooHighException : public std::exception 
+{
+    public:
+    const char*		what() const throw();
+};
+
+***
+I keep forgetting this:
+Bureaucrat jane;
+Bureaucrat jane2 = jane; //is equivalent to jane2(jane)
+
+-> copy constructor is called to create jane2!
+If we wanted to use copy assignment operator, the object would first be created (with parameters or not) and then assigned:
+Bureaucrat jane3;
+jane3 = jane;

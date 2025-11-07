@@ -1,4 +1,6 @@
-#pragma once
+#ifndef FORM
+#define FORM
+
 #include <iostream>
 #include <exception>
 #include "Bureaucrat.hpp"
@@ -21,7 +23,7 @@ class Form
     ~Form();
 
     // members
-    void beSigned(Bureaucrat &b);
+    void beSigned(const Bureaucrat &b);
 
     // getters
     std::string getName() const;
@@ -43,3 +45,5 @@ class Form
 };
 
 std::ostream& operator<<(std::ostream& out, const Form& src);
+
+#endif

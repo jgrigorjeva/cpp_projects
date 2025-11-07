@@ -1,4 +1,6 @@
-#pragma once
+#ifndef BUREAUCRAT
+#define BUREAUCRAT
+
 #include <iostream>
 #include <exception>
 #include "Form.hpp"
@@ -42,3 +44,5 @@ class Bureaucrat
 
 // operator overload
 std::ostream& operator<<(std::ostream& out, const Bureaucrat& src);
+
+#endif
