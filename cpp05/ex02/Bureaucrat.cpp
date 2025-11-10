@@ -61,7 +61,7 @@ void Bureaucrat::lowerGrade()
 }
 
 // new function
-void Bureaucrat::signForm(Form & form)
+void Bureaucrat::signForm(AForm & form)
 {
     try
     {
@@ -73,6 +73,20 @@ void Bureaucrat::signForm(Form & form)
     {
         std::cerr << BR "Bureaucrat " << _name << " (grade " << getGrade() << ") could't sign form: " << form.getName() << ", because " << e.what() << RST << std::endl;
     }
+}
+
+void Bureaucrat::executeForm(AForm const & form)
+{
+    try
+    {
+        form.execute(*this);
+        std::cout << BB "Bureaucrat " << _name << " (grade " << getGrade() << ") executed form: " << form.getName() << RST << std::endl;
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << BR "Bureaucrat " << _name << " (grade " << getGrade() << ") could't execute form: " << form.getName() << ", because " << e.what() << RST << std::endl;
+    }
+    
 }
 
 

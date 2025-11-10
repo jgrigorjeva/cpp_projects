@@ -28,7 +28,7 @@ int main()
     Form low_form("Lowest form", 150, 150);
     std::cout << low_form;
     std::cout << BOLD "*** Sign a form (to test copy constructors) ***" RST << std::endl;
-    low_form.beSigned(poor_pete);
+    poor_pete.signForm(low_form);
     std::cout << low_form;
 
     std::cout << BOLD "*** these are a copy and a \"=\" of Lowest form ***" RST << std::endl;
@@ -57,7 +57,7 @@ int main()
     }
     
     std::cout << BOLD "\n*** Check invalid sign requests ***" RST << std::endl;
-    high_form.beSigned(jane2);
+    jane2.signForm(high_form);
     
 
     

@@ -38,12 +38,9 @@ Form::~Form() {}
 void Form::beSigned(const Bureaucrat &b)
 {
     if (b.getGrade() <= _grade_to_sign)
-    {
         _is_signed = true;
-        std::cout << BB "Form " << _name << " is signed by " << b.getName() << " (grade " << b.getGrade() << ")" RST << std::endl;
-    }
     else
-        std::cout << BR "Form " << _name << " was not signed by " << b.getName() << " (grade " << b.getGrade() << "), because the grade is too low." RST << std::endl;    
+        throw GradeTooLowException();
 }
 
 
