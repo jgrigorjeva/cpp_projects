@@ -1,2 +1,1119 @@
-**/*.o
-**/*.d
+.
+- .git
+- - HEAD
+- - config
+- - ORIG_HEAD
+- - objects
+- - - 02
+- - - - c8a76f6c6ef03b6b4933aeab1f336d00a1684a
+- - - - b083fdf747da0eaa5c3bd1b28c130090e75415
+- - - 7f
+- - - - a6996047192d02a7421fa4b9c580ef7e74b15e
+- - - - 591fada723f92d7fb1f9443925283630c1208e
+- - - - 9fe726bf78bf974f04e32aede2603143c8bb41
+- - - c4
+- - - - f9a9f6bd733f75033be2c0af9eae8cd58fca36
+- - - - 998c899b76110d00762ceccb49cca34e06fce1
+- - - - 17985a8ef004dc9ce2300e2d4f49ba959adac6
+- - - - addea8228912f09242c57d6784cb8ef9f6f6ec
+- - - - c18c089a66c9d2b1a96e929942569dab2a22bf
+- - - 2f
+- - - - bc20362c345ab39699b06d06877fd321cbfebb
+- - - - 273d582e5b432a7096f4b85396d9a5a7383d92
+- - - 3b
+- - - - 91cdbb1bd56aacffb5bfa6a51e4c7512a4d467
+- - - b9
+- - - - b00a9d26730fe7f4ac2959e19bb3d7cc8a4fd8
+- - - - 78301825a7a21d1e0df552efadbf34f93b0c87
+- - - - 067cc402be2882e777c12e79f536c07e098b86
+- - - - 312b3853e97be2f6c80c8694f3b51eac3d1695
+- - - 20
+- - - - d6da3f6c83500297cda4789318a0b8ed39b68e
+- - - - 030978f8b9d4069e6ff1da57695fc4551d8b1f
+- - - - 85cbcb3be8a509d4ba09c8a2905f000474551a
+- - - - 067edfd21c472bd3acb65136b381c20cc5529a
+- - - - 0a126a81a502318ed78ee461681a4f20860f5d
+- - - 5b
+- - - - 94380435e7b2fda4b9646e0d04ddabe589ab03
+- - - - 5c56beab180bd2c3b9069194e7ea6ea51fb1c2
+- - - b8
+- - - - b8ec0e393577d58bf377ee8d9697df9ada9f3b
+- - - - 72931b83a7b2438a812315debf3d6c658483f7
+- - - 61
+- - - - 56220fd01a589da63c697afbe3822d0e693005
+- - - - f82471de687dd7711a93ab55e3645c5cc6850a
+- - - 8f
+- - - - 7d3155590210c3d707c54d8265b7539ed1b32f
+- - - - 15b589f7e533d258271405c9473d82d03f3aa1
+- - - - 673b8acba06b1682ea5e7ebd6dbc6ff94f9ec5
+- - - - 6a74c94547aec29b6d674bf1bf7c43ceea71de
+- - - c8
+- - - - 66960a8394aed2c79a34bbde85fc907a1f7a9f
+- - - - 780088233b78933978d039932969c778c19ffd
+- - - 55
+- - - - dff132662ec9f501eb41cb7b7d8876ea63ecd7
+- - - - adf37cb5acabea9e9be53605886ae5054a1461
+- - - - 264276b3b623016c06ecdaa033c89f6c70863a
+- - - e0
+- - - - 1563b3aad29c9f75936f1b36dabb5ae4af532d
+- - - - efd2e5e0bdfd883bdd9550664b05c9f12fe3fc
+- - - - 0c6d2a53c776b62f8932f50a340dfbeb4e8111
+- - - - 1d8d8b14c70cf59b9bdbbd1936165b727c2fbe
+- - - 23
+- - - - 7b0f9a4c0d34d814879e46cc1432912e1603c8
+- - - - ee690968129a5fceb369ef2da0202df8601dbb
+- - - - 3003b1e299e07808e16362d9dcfb378ac97b0e
+- - - 38
+- - - - 1f97feba02556562e743c3e3c9416287dd17f9
+- - - - b0e6083b060d5388ff85a8625cfea0c1474ee4
+- - - - 3c2c8b83099ae137d28dd8423940074af3fc2d
+- - - 4a
+- - - - 8edf82d0b89860a6de4181f29058d2694b89ce
+- - - - de5b5e8b4d405069dd4221cf3eec3629b7a34c
+- - - 96
+- - - - 3917f6c273d7bc9e722186bbd5b81148dacaa5
+- - - - 0c0b8bdb4f714f9271819ef468b8f3de3b6315
+- - - be
+- - - - 8132fdaeb5695d41bd39891ac1e050423d01b1
+- - - - cfbb82e1624b09231119d81c7c17354899fb8b
+- - - - 9f8c3402a9f03a8d64821f001f6f2e53c7683d
+- - - ff
+- - - - b19174ca6e44b2e4f7260ffca6ca0f32823209
+- - - - 40ac271bc5d300714e7199069b8b2865753c71
+- - - - bff13e042f3197ed68a7ae77ab4a99991fad95
+- - - bd
+- - - - 4607acb550458ae2320a8e14937b7cea83d69b
+- - - - da0e9ee66aa7fa1571f125426504f1b3c630e9
+- - - - 9d59c3ac0c75c64a0ad4fd2351beb30e1a9d25
+- - - - 49ef8314385db6bd893646616d18c8eb752687
+- - - d6
+- - - - f7ecd6881300d51df1a651d6bb89395426ed6d
+- - - 3e
+- - - - a0a0f4ceda267f62648dff1a875cbb4e0d9eb2
+- - - - a691456dfa89d2efdae8d3b889433911787cf7
+- - - - 03a59021f3cd01c2f7c6d16fa2f19380c6f852
+- - - c9
+- - - - 52b990c0749dc8e48ff1cb4ae68a63243892ba
+- - - 41
+- - - - 937c6f13826ec40a8f05d81f8051dd4d1d6dc0
+- - - - 3a5ac5a6a104dc0d24fabaf610712f10eb8814
+- - - - 0dacb29b6ea8e9dfa4575cb4334f9b87220da3
+- - - - 1b1d1bed96c1d1227cd15ca848754030e30a9c
+- - - 27
+- - - - 23e34c8c5eac1f75cfeedb4c6642e3926d4867
+- - - d8
+- - - - f3834992aa2dd7c12d2e5562812626db3aa86d
+- - - - 4e3ca4b821a0238008670a87150bce8dda698a
+- - - - c62e6f3de282cdbf1cf90c18e42f77cb3b00f4
+- - - - 0333506f897a5b123a8b3905de0b347d7b89ea
+- - - - 64b799036e2de39276b707f1b49adc412aa18c
+- - - - e307339256d8d181b0012e5e53009322e4b173
+- - - 9b
+- - - - a3d239dd7c2e4f5a905fc3eec9016ec6762451
+- - - - 657ba7e635da3fe04df35e7e59c9133c931755
+- - - f6
+- - - - ae0548a45cffe78585328042b1a11067a2fd91
+- - - 3a
+- - - - f469d54b036efe92ce5865d65d2d8516760f5a
+- - - - 987780631c131ccfd8d0e86c14771be1ba248a
+- - - - 7c1f6668bf5e7910634f83e0c26ea014299b77
+- - - e7
+- - - - 834bf05778ce4ea3d76930f1c375c164f51b73
+- - - f7
+- - - - 1a9df3804d7fa3ecd8be015785a068d5918a77
+- - - - 6301f54b5df80b7acf9a4614226ffae4d36e47
+- - - 4b
+- - - - 5e2362266e4f64698026d33beb23f70d4c907c
+- - - - 574ac2730edf6f8dfd39390911dba8cae184aa
+- - - fc
+- - - - 6d85ba6b75c86c0f3bc777c4ce40ca444d4ed2
+- - - - 47b714ef6a505b9b890815d0e6604d1bcd3f2b
+- - - 18
+- - - - e69a47502487e40613ef0d826dc4dbdb68b776
+- - - - 2286e8b0de3b51f7296e086401855e9b0a1374
+- - - 0b
+- - - - 16686d60bc62aa503115f4ef810365dc3e2386
+- - - - 0fee48884067aa8047e1ff4e7019ca8595476a
+- - - - 1ad7c075d1663af07b3a083e7402f6e32f8011
+- - - - dab2e657f775983ded3ba3eb58f7d51ac12586
+- - - 9e
+- - - - 3978ca65ad181c6536a835085e1e6f1d5373be
+- - - - a1c239862ec4c9a721399737a36ef0663d9602
+- - - 29
+- - - - 898f3c186bc5592af94b3d77dea27efef6a223
+- - - - 141f0544b1b513123d400ff039ae69b7580117
+- - - - a830e8cd095805fc469178be3c3ae19a0a4d25
+- - - 08
+- - - - e4c230c7f7344046d0d8d982bc6f33a89ee7b1
+- - - f2
+- - - - 3d7e9189cb701ccf44e91e52746feb3eea7874
+- - - - baaa0bf1335c3f43a44c8c73bf307b35517d60
+- - - b7
+- - - - affac14e510b51cffb9fde1c8aa9509f9253be
+- - - 51
+- - - - 375d8b65f7b2d0aeb08935809bc2339d7ef225
+- - - - 42f411c75ea94ac90ae085562637f69fbe01c0
+- - - - 9c714e19c203120e4e4d39d4deeccc047a589c
+- - - 80
+- - - - 2241c9de19b1e4a6cb80c96e01666f077b5dfa
+- - - 4e
+- - - - 38e7ec7dc7b3ee6755b7514dfc78b26fd8edb5
+- - - - c1cd25bf027e8694fbeb72eb917e5eda27345f
+- - - - b2f0ee6e618ac6c0f5588bece565f50083f04f
+- - - a4
+- - - - 89e4acc6f108151990c8bb339c46785eab8ca8
+- - - 6d
+- - - - 674f11334bf5ab4fc22038255f92f00575a0c9
+- - - - 8cafb5d4bae69140e26be08f621727c206d431
+- - - - 4ff8e268ac7b76f91e600a12e3f0cbcc048a91
+- - - 8e
+- - - - 55f4a62f16c11ed0a2fb272796653d6d0e2886
+- - - - 19271f1e4fd8ed854a8d86173ff8f355e1a0ee
+- - - - 9a2d919a8cb72bafe0acdf1f3d8cd2b149ad95
+- - - - 05ecb75c515321e94be3471ca788dfd73f800c
+- - - - 3f552d1b5aaa043c3a9edefcb325da9381ccf2
+- - - - 6b7d2823789c65030ed8d6e86ccb98effbd85c
+- - - 35
+- - - - 530ea906266bee69be30cfd6254b190f6ea185
+- - - - d191c3230c3e770bbadc00fa085d21d7ecc3f5
+- - - e3
+- - - - 3e76a1baae003d5fdc9eb28db2b654cc1ce3ce
+- - - - 21d1b382b7b589b07730af351f6b9f388ab0ca
+- - - b6
+- - - - d684474c285dcdad00b3bb0619b8d488b0ce79
+- - - - 578f3808efd3d3be60f266e8a78dd35151a1d7
+- - - - 9f6e9ce7758f669d8de159a2af44709fd2f704
+- - - - f63bd9abf0df1cbda1938e1bd5254d2c8b045a
+- - - - 65cd7d3ed0f7379fbf7cea5e70dcc7b26c210f
+- - - a1
+- - - - 1cd640cf2f80e3dcdbf4bcdb540a2b2a469092
+- - - - 0e9797a7af8b0e1051bdb42b346aa42676c268
+- - - - 9587ace985db094d814119517069827a504149
+- - - - ef23b40a5a942a88169a4c67e116165dff74d9
+- - - 92
+- - - - cb69d798d575ce94621a607be343ab3ae01e20
+- - - 42
+- - - - 5d020ba3cd1db04535055bfb36c5c988a45f64
+- - - - 06c872eab2bbc77d99f2a9ae3fe1d8b6b8b02f
+- - - 6e
+- - - - 4a98eeb3f52592f14697ae8877398b9f04e0e0
+- - - - 8a5f8d7195804b8ada2693658c7b707e47c87a
+- - - 88
+- - - - e39ddea27cb8b41ac2b395335696e656a41aa0
+- - - - b86dc5351f178589538c4c41c660b6f6bf02c9
+- - - a3
+- - - - d207c936c60bf8fde8fe0ad8dbd33159f61bc0
+- - - - a9f99877e83072fac33d6c5da6b6d2df6736f9
+- - - - 3b84d4eba1c8082d038e24cb01fafa4ebc2dee
+- - - af
+- - - - 91062f1b4e72f6861a3876339831d788190709
+- - - 00
+- - - - 63f13ea36bd299dfe62118b2bb834ca160a6bb
+- - - - c1fd4c867a39c232d19403961a22f01a3be7a3
+- - - - 55b626fdd235dbf6c53c02d1c08d79f0b880cf
+- - - 7e
+- - - - 186711928ae31f270aea3822d09cba318222e5
+- - - 0d
+- - - - 5eb4aaf63fd8cf14c39c3eeccc2164461e892b
+- - - - ebef0286d7bde25f6edb007f7c9b472ff5d35c
+- - - 26
+- - - - 452df061d9612b6780fbfcc95888ecd886e7b5
+- - - - bff98842a691a3f0b921e1c459089b7792a1df
+- - - f0
+- - - - ca3785fa996dd9da62c7d5277ead1b61275895
+- - - - 468b3ae5527532bba2c565125c0666c2f4382e
+- - - d1
+- - - - 7a19ef6997d66ad7234828e843676e149e5aec
+- - - 52
+- - - - e53a80b9e462cd3355af062262275457f674c6
+- - - 3d
+- - - - 4cb0036134f05c331c7f6c378873a79ed28f98
+- - - - d5fbf8c52bba0c10550b321bb613bac5e2f4d7
+- - - - de29b496b026a5c3964b8519498b4463423145
+- - - - a674c46994eb551243a19be333c0f1d25cd425
+- - - 60
+- - - - 1a7b0b68281c9d616ba5b05a79b14f70c78663
+- - - - 44b12e04f0c645caee1bb52c34bc131b91120a
+- - - - 8d91605a06d71881439c9971ca20f013832724
+- - - b5
+- - - - 78b2bf9c7e873f949f3ac83d18c8c331d91c70
+- - - 7d
+- - - - 2c98c4e99e6871e187f3f05cb728023e552872
+- - - - fcb7a7fb63796d410260a106412046c8cd4f27
+- - - 4c
+- - - - 2dc0b7c29e5b478feeb6e09430716db69f3e13
+- - - 75
+- - - - 3035e2c50ab7d6678500b3935957dcb2b8cf80
+- - - - a497173c72862e3e2ebb829671f577f6bbd9ab
+- - - - c193cf609dccccf7fac996ffc4605ba3faa4b3
+- - - 56
+- - - - 3c44136c697f9b527f25bc95aff047b287071e
+- - - 07
+- - - - 24450f80c233958706cc8275fa94030c64e968
+- - - - 6130a7035c431e2a14373ee89cb858ca77b2f5
+- - - - 3d696e3553ce64417b06b7990cec99cc931bc3
+- - - - e4d997c44fc5a6a778f341666cbfa18ddbe9c4
+- - - - b3e0b957ead0c3259e50e0720131e3a794a656
+- - - 50
+- - - - ae56d0e506359b52412c5597a12ab2c87030ab
+- - - - 0eb2a4f835a269d594ec5ab4db5f5066bc1271
+- - - - fe4a4397da7ef1d9f939b7c9b58a30d7f1da37
+- - - - c203ee779149986d95f5b55d05be493f8ff006
+- - - f1
+- - - - 82aababb08ff5cb1653a8d1649b43c09974635
+- - - - 63f023e63486510ed0fa034618ba9d66546767
+- - - - a88bd8c7928fee5220c5966840cbcefe1e042e
+- - - - 80e101fc5c62f23a304a17f3a531f8fd10358c
+- - - - 6b8e7336f79f1c776ff2916996c1c2102fb783
+- - - 98
+- - - - 6d8ff1448f69cb3337268753c6da4adf05c03d
+- - - - 3951276a61e34378ea7a850ae4daf45d06a937
+- - - - 6d5666507658e662eec474edfd9b614ef87270
+- - - 71
+- - - - 8777d9bb6b419d6ef80a74198d7fe2279ae941
+- - - - 40e59607301e19dd898d34cca5c7aae3b2537f
+- - - - 5dfa8a34b8b4731e827c2b3682b9e19d5bd981
+- - - - b0412f6ae1bb7b81580441bfca339e221532f5
+- - - da
+- - - - dd3ec0bacdf7d6e09392cdb703d999aa7c9055
+- - - - c665fefc58a27784c7b3f9b519d4abb74467bd
+- - - - fc508ad99483ce0096489f4bc8da7083244918
+- - - 32
+- - - - 454fa0d37604b7393dcdf8a860f170201f15ac
+- - - - c676d4d898affa87cdf0a5f006bf4bf199b0ee
+- - - - d385dcdab058ef63ddb025285671c19a20e5ca
+- - - - ab4649b6f8586b9eed29c9faa3bc1e2ae6bcbc
+- - - 72
+- - - - d10bc638e4e1a0b13928949a09c8abd70ffead
+- - - - 66ffbb68105654fa434d35de176a0b571cb4d8
+- - - - aaec4afd5a25b361b3bcd39c778e7f6c05c123
+- - - e6
+- - - - 5dfeaff7e4f38fe30eded26e58bff94fa1da69
+- - - - 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+- - - - 06a603f7ce89d05202ce7ea4620fd6caa6e14f
+- - - fd
+- - - - 0c9e06896a1731cb46f4fbce826a878717588b
+- - - - 8668cede78462153ee612681c1b1cbd1c1fe4a
+- - - - 0cbf46846f597eb7b93cd507cc0965fc90469b
+- - - - 0bee2ab4f1839ec8d3a808c288b77184615494
+- - - - 73aaad5354409e6b27b21b7dffa4ff35b20da0
+- - - 73
+- - - - 6457d219d1e01b2d974829a6aa1c74ebd0ca1a
+- - - 7b
+- - - - 3bad7f752fadedc879f89cb3cedc39f9f25d98
+- - - - 4ae261a0a13d3c983222a56b433669711bfdca
+- - - 40
+- - - - 52db05d518d3697077978d2af0fb4069795a96
+- - - - 23c5b7a0822f05a81e4f3bccdba4f3e79cd4b3
+- - - - 98837b48ca031da108e192c5bff8df91c51a94
+- - - 93
+- - - - e25999e737d79888bfa35e1b6dc248605f57dd
+- - - 49
+- - - - a54220262ea38950927d356ad3933f5ccfd689
+- - - - 57368d3bd9dc0dfd9613e07efea2bf81e3d174
+- - - - c05dd0584a225d11ef3a996edd28b7d43b3673
+- - - 28
+- - - - 8d7b2948a49f14a36694c967f69fa011e7f21c
+- - - - bf5044bbff17e9a8dec0941d2261b9b19f32a3
+- - - - 6aaf9d9ae4731452366331d8d8e677eb37dd4d
+- - - 67
+- - - - 2fc815edb9b13d3d40d72b22ced78038406717
+- - - - e611f31f2e5318676f66e83f8b8a6b9a75705f
+- - - - 413a08aa636e099c346c777b2eb25009e8dd88
+- - - - 9c2b8cba1f852b13572fb371500eb3dac94920
+- - - 89
+- - - - cddf897849db9933638c46db856c8444cf7c37
+- - - - b266d0b3c9bd6bfa66e2257da61ae7e721a7db
+- - - - 010bb755463462775755a6084c9cfbcf763c8d
+- - - - 117a6b6d68f2676824a5dcdac6804fea97b36b
+- - - b4
+- - - - 5670d07ab181e47f30d5f6538f370e8c6735f0
+- - - b0
+- - - - 9d3e831530248efbb0b9a6c0c974968fff1449
+- - - 15
+- - - - 71d933a0c499f2e1c631deb341a8dd657de18a
+- - - - 28817232654eaafd11d65a57eb4a35204ac100
+- - - a8
+- - - - ac5134dd693da3d7bcbc5f26f9d7ab29aa57bf
+- - - 64
+- - - - 323d5f2b05cb1619b4021e15a48ded6fdef08d
+- - - - 2da9241a3f5678a5872c5e88366c10ac1cab02
+- - - 2e
+- - - - 6b0f54924c5205fc0b2ceb52c7672913d2f5f0
+- - - - 6689300abbcf4febb7bb0dbfefa3e624bb33a9
+- - - - bba478fcb843163575450339c23530bd464ce6
+- - - 97
+- - - - 5094e3a7233f043d0cbbc88001af15ad64f179
+- - - - 19745d1c79538d7dab81a4f966b8118195f409
+- - - - 166d6e2de30c089575eb9e6585141fd5bf6077
+- - - - 862b51799fe0971920358d230a1837df5cdd44
+- - - 1d
+- - - - 82dc99264701b110007b1dd238226699694c5c
+- - - - cc228b33a97b861897808d4e6293b63d9f01ef
+- - - - a56a00790972b5fe80e0eaabd528c13e07ed98
+- - - 78
+- - - - 64d085790175579de98c9f1601431f81e747da
+- - - - 4d6e3764b98911237cee573b263f7042f69224
+- - - c6
+- - - - 48d36adbde787c446a1165b481146edf4da354
+- - - - 56d7f93669713f87a5ef29bc0dabb7187370f8
+- - - 8a
+- - - - 4d2860648cf36c41f3d14aa7ec085a9a75335c
+- - - - fbc2e0b161d51d01f3b2ce84e7f6b60acdafeb
+- - - 6b
+- - - - cb623b12915d8b4a23abca28d8186f9e80cb93
+- - - - c284c6dfdc3d71a06c05b1eb2f426ccda33920
+- - - - 2f350c42f91bf8f7e89cbd8335a7e3fa4afc25
+- - - 1a
+- - - - fcf0de615e492f1968a2037d69cd8222ce3aa5
+- - - 39
+- - - - 6b27769ecbbc26de37163609f0c9d981e24e76
+- - - - 07b538a239ce4406f78707891828e14233366c
+- - - 1f
+- - - - 5032794b7f5463a8d07b159eebf15647724571
+- - - - 6fb19a1607c65518731b885d4ee9a93dd7830a
+- - - bf
+- - - - 841b6f508b22593aa9224894d4d1ff5efe17aa
+- - - - 304a1477a8d530d631f5a3341ef3d894067933
+- - - 36
+- - - - 5a9c11488cf93d9e8eb93443a383b09648d937
+- - - - a0f98a5e7dc2ba5d8f551b49c9ef0391f766a5
+- - - f3
+- - - - 26653619073a4b074efe695db039672023e551
+- - - bb
+- - - - 687539512b4a56522d3b9b07afeebc84744359
+- - - 84
+- - - - f234e8c2b1a41d416bc808010b8a52c879e704
+- - - - a7fdfda4835e4cd92f51afaa1584419e372395
+- - - 65
+- - - - ef0f1337df8c340287dda6a31e6dd1527e0b6d
+- - - - be8615e10d192dfdb97c0391e128b2ca7fae05
+- - - cf
+- - - - dce8fb9b99a0314c16f67bcdb3ac39d8ba967d
+- - - - b850e017d3370812a651de24d62abc0b305d66
+- - - 95
+- - - - 07ced84e9e9b910925f92d2bed2b9e552b6c0c
+- - - - 920dee3de19aaebff0d0333a62e25a520be5d1
+- - - - a114b5042f9f3a6521ae2179bf9012584e34dd
+- - - - 4bea7f7809b097c88f865e8dca26f0887dbd4d
+- - - 1e
+- - - - 3dc47a1443a08577ada3e8a4b0c9972ee41016
+- - - e4
+- - - - d2e9f6956c3e5db5b711de4a0584339677e0a0
+- - - c7
+- - - - a149d621b9be10d452c402052ae2372e8e72a7
+- - - e9
+- - - - 4ab013e85c1db6207369345abb454083b2e61c
+- - - ee
+- - - - f63546b421dd018d9918bde40d499923e189e1
+- - - 12
+- - - - 46093bed76ff3e4b7c5ac4003c22e1cffc8a2b
+- - - - 9e87eee1750f7880f105b1d39991fdc82124ab
+- - - - f009cc84edfa6863c449b7f0328d78604df19b
+- - - - 05dd485eb335778546779bdc0c8169b1276b9d
+- - - - ed5fd065862278fb1f26086c2262cc0b9510de
+- - - 83
+- - - - a5c0221c282aecb58dd022f3b20034057aef3e
+- - - - 17230494d7c5a1c6d8a2e6cbbe8dc3aae5de11
+- - - - 2f4834b184e6ac5ccfe8c14de540eb15f3a181
+- - - pack
+- - - - pack-0b69ae2d637084702227ebc060ed8b4cee3f7058.pack
+- - - - pack-0b69ae2d637084702227ebc060ed8b4cee3f7058.idx
+- - - bc
+- - - - 357144badcb2d06adb118fb7724d023e343d1e
+- - - - 78d906d6d2be310800177f7383e67be1871b9b
+- - - 0e
+- - - - e165aa0534dd2f05e88a8e239cde43eee08de7
+- - - ea
+- - - - 83c59aa3906eb36b4f2700219c449ee6db7590
+- - - 8d
+- - - - 9948e4d3ec2bad893e986be247691523e952fd
+- - - 6f
+- - - - 97d5878dd372f064583dda6562d0efe6c40b92
+- - - - 10fbeb5901428396ec111319ed9a7172587463
+- - - - db29e63d5deca786a1d0fe1893b7d8634d3958
+- - - c3
+- - - - 0961b37b4cf46cf926f0d5481a58522a91beec
+- - - 6c
+- - - - e767e68185781a8025314c85d8238aae9e20a3
+- - - info
+- - - 3f
+- - - - 8b4e65ee27bcf0b847448b64451951a6a84397
+- - - - 9cf05e7b962017538f52cad66ccb46919a626f
+- - - - 423902ae88f66a118ce0a722a3ffda83185a31
+- - - - 322bdfb588ecabeba323fbf7ffcbdaa3350857
+- - - 4d
+- - - - a07d6574c4c3b1052387797264fab0fb4a404b
+- - - 82
+- - - - 349fd98dde69ef7d2f21f93a53c3682d93eb7e
+- - - - 1471f964d23056fe098abf8704c10a7344800d
+- - - 3c
+- - - - bf2713217881e4edbea43171c700d9af43194f
+- - - - a588dcebd9a6cfc846d2cea6437d39173c5bc2
+- - - b3
+- - - - 871f6aa4e5107b5ef6a9b0a81975376f2ab778
+- - - - bcebc297ea7580c8f52464bc49d8b947b4d20e
+- - - - 437e09749143449dbb00be2434994c543812e0
+- - - 9f
+- - - - eeb7e84c15c171e985b1b6314b5b73c593566d
+- - - - feb92d3b93a7e193391ce40d27021c2d040899
+- - - 04
+- - - - cd8993b1e3fa07d9365999d98d97dec241b001
+- - - ca
+- - - - 575b4b1b0d3ffed2bed47acb838db77f41b84d
+- - - - f55c1e08f8b7e86a9fa0631f67cd9d50ae32fb
+- - - 68
+- - - - 8bcd7489597a4c5d856bc7c40fcb4d4294badd
+- - - - b566f0a5fc8af6066cb9891ef6192c940ccf64
+- - - - 4d6d1d102d7ce7884763a4f828af544e9059d9
+- - - - 46d1a1a7f34b4539cafda897298ab357c03f87
+- - - 7c
+- - - - 2339cdc8a56e9a0e7890c516b61dd6af6e12c7
+- - - - 4dde8889f9c354fd8e9ff6b26f58a72d00cd27
+- - - 9a
+- - - - ad15bb82c49bdd4f34f86aa4d3ff6604bad863
+- - - - 8f8e4b75eba2908c9cf50b5dcfd34be533f121
+- - - 01
+- - - - 90ea898dc8bcea9bca66f0277ec190a51f47e8
+- - - - 82485406cbb0eeb34bbc05702ba066a53eb0d7
+- - - - e2cef7a89f1c51ef5f0077d2c06f9e3728dbf3
+- - - 90
+- - - - 3d194c3bd885b8cde23418638069f003cffeef
+- - - - 1b185f82d9ab3ddc6032d3a460a5cfd39d7261
+- - - - 907456e1487ba4345f30cbbbe2e99956cc94f3
+- - - 1c
+- - - - 27f4aa2cd19f42a508d12e72c636274f468b99
+- - - - cdc16e0ba2c36ebac6afa41235eca65e49c3d7
+- - - - 8b271c11c58668b0ee33e676a87904e5072cbf
+- - - a0
+- - - - 1d66e5a1babf910fec0967919f6405b168b359
+- - - - c5b02eb1f1ec8f71eb70ca27400610703540da
+- - - d4
+- - - - f459a9920332aa31e191522f48b7d6f38845b3
+- - - - 2380b6750d30b2a5cff1f01012ca2b1457b191
+- - - - a26e84b53f4b5a67d5e47dc80c07baa67fb96b
+- - - - aee9fab239e3a8e56efe9b0c011e839d2b50a2
+- - - ab
+- - - - 186f76fd0fe5a94137107c3f8de1fd91680370
+- - - - 403059ccecfe18fd97f1dd3abb72c2e8b47e7d
+- - - 09
+- - - - 584624618e9c86418513a5b4eb90777169bc3b
+- - - - 99525639717b57b1adb656da3526ec3d0260a2
+- - - ce
+- - - - 9ef7692d3997b13ae5d52693154473f5f1d64c
+- - - - f669d940ac1ea77d66162a37d5a557dfde3143
+- - - - 4878b98138ff33197de8e634c9b6f123aa69aa
+- - - 74
+- - - - e17629b7dae0924b83732634cd09bcda4c7257
+- - - 24
+- - - - a447263463171b9a2ae610a722e3a571e6212c
+- - - - 0c8a37e35c8063b9d7eb60c7e9cb78d6d31c39
+- - - - 1a36b55f5ddc210a3b37af237140d599db4ec9
+- - - ae
+- - - - f410fae3959dea1b98c67be6f149de3badfb3f
+- - - - 1e3374237124e85103dd61cf296d4503c63529
+- - - - 68d51e4beab2ff0e4ba3b19970fc3661c00e08
+- - - cc
+- - - - 6cb6c1ebca54f3cbe92a6d911a4cb407d0d8e9
+- - - - ea2fdc9c3ae8c2d5f444dc4a580da445a29f2d
+- - - - 73881770c4d2a4c8b46d304d018fa03cf9f47f
+- - - - 06e3cf4c0da0ddd9f5f91405e222a1a71c4d8f
+- - - - b5c9eb439b8edfd654f05d47741dad326de38d
+- - - 44
+- - - - 6181e0ab9c57903d72a8da8e6fc6e9d4f13aed
+- - - 91
+- - - - a130f06ce7c022c70db730b29ea81c1fabffd1
+- - - - 0b363397daea28bd855176a72d016d6595d95a
+- - - cb
+- - - - eab42125edb8804ded1cc3eb55ebb52e6d2ad0
+- - - 13
+- - - - 55bd3fc4c0fc59ad7298ba13b9cbafb3b34770
+- - - 45
+- - - - 467f3c57e91d42247fedd956e69e75232f2aba
+- - - 30
+- - - - 0b69d6c25a4f2e615b8cd1bedba52eba6bf9d6
+- - - aa
+- - - - 639147cab8b0ba359c06021bf12c7275b4e3a7
+- - - - b107dadac270cf5b3f5a3d012aedb64cb09de3
+- - - fe
+- - - - 63147c5d80da945205b134c0cc52abf1114715
+- - - - 57d0fe25bc1dbd1fdcecd323d06b90f279dd92
+- - - 63
+- - - - 8e257cbd8d9727498847c1474bdb6ae9fb0913
+- - - 69
+- - - - f726d7f84040a6e4b445dab9eb6c501a4d7ace
+- - - - 8956248d5be1b83debb561a3d3dbc300d00f4f
+- - - dd
+- - - - 4d7f08c79019fc84d459ff14e0fc5a3dc25554
+- - - - e1c61821f39cb7a20fc15d00c5700172393fc1
+- - - - 696662c6940e254d0e89255970da1b1ae71c9c
+- - - - aaf4d4a5c90a22d54ba22a385688455859d0e0
+- - - - f268085b9942429617401a33fcef498b881db5
+- - - b1
+- - - - d511e9db673e28da54f730f64912b4c28255d4
+- - - a9
+- - - - de1c3d33d2dde7210447ce096876addd35d609
+- - - 8b
+- - - - a92d9996fbb35339a9d438e8f7e98a346e12e9
+- - - 03
+- - - - 03d0468954023a9ae948c03fa900b1d1df2907
+- - - a6
+- - - - c7e371614dae730baabc95eec9b85547f2444f
+- - - 37
+- - - - 037bc3c77b527ef4c172348d1e00dc043dfd66
+- - - 58
+- - - - 1c30fd7703cc8bdb68b8b3b0d15e662438a92d
+- - - - b8029519d96b2a4a04531afc7f70f1a97e75e1
+- - - - cf2407aee037a308fc83f5bc515f42dec7c8c4
+- - - - 6a185dba49ae795be120bdf767c9dd19e8beee
+- - - 5f
+- - - - 69a031c6fb6638371c41bd35342674f1de5ba9
+- - - - a989e80267fdc09aa0ccb4a3fcade5d35f9d2b
+- - - - 096950e2a9ec265787c28b08a4716051a69aa6
+- - - b2
+- - - - afbb922b0fe5634569f645af619e9297ca2020
+- - - - f1dca8471037c946cc4b56e0a1bb8c6800c649
+- - - - 350f065767813da169b5c7bd12808e265fa30e
+- - - - cb0596b176892408b65a17ca86516426fbbde0
+- - - - 98be7c05b58f75272b222b02e1e1c64e9460ac
+- - - 19
+- - - - 352453efad93e0c8b5c5edde59d0524f974363
+- - - - d4c7116a11453cafe691dee4786fe3af2884a3
+- - - 11
+- - - - ae522d24274af0246c474b14a7edace8278b33
+- - - cd
+- - - - 31e0621810fa35e2e1ac003e5139ce71feb747
+- - - - e04c676009093c2e2a0595b76aa07095df8bbe
+- - - e1
+- - - - 62bc8fed2dabb32e20726f6e66fc322611fa76
+- - - - 17e73a4a895e8595519171880a26ee372247e7
+- - - 43
+- - - - ca5a63c881657ab0ebcb556f97700bcdc17094
+- - - - 4d59d36e68ec6495272b3594d69c3f9cf55e06
+- - - 8c
+- - - - c8564e776bb52eddef34241598f2116a4d4db4
+- - - - 6389921c99016e859416e5d926153cf28e5d24
+- - - - 9be34786be4936645d862919945ba4deb98e21
+- - - 25
+- - - - 5e53aba9c5cc6d59a4cb2c20a08dbb9988a159
+- - - 47
+- - - - df66112b187af753637abb628157810220a193
+- - - - b1a797467ebc34d13709a405b2789beb78fb86
+- - - - adc0b5e0c27529b11d7059e1a0095bbb084349
+- - - d5
+- - - - c8021b982e9d23ec3b02060aea1f450a9ea977
+- - - ec
+- - - - f62df69e32088e289378f1ef05d17f95daa664
+- - - - ee4d95797fdcb94272384c91ddf7e736f8909f
+- - - - c04950fd1b3091c2872db08ba09bbf1cfd776b
+- - - 22
+- - - - 363319118822385a0b49cd813ad25d7e5ec060
+- - - - 99dbb1dcc6599d8369067c1e246bf857d712d4
+- - - e5
+- - - - b6765ee6bfb947e21ea317625dbd6f9902ac3d
+- - - ba
+- - - - 257cbe4501aa9fc8e8c86ad1403f84a0cac400
+- - - - 1107ca221d4312d3c1deb32724ea4d1feec85f
+- - - - 7126a5d8bc4876ce24670ef67d68022b01fe9a
+- - - - d18463d341a995fd3bfaf1bd67973eb680f0d7
+- - - ac
+- - - - 535998f5ae75b2c5ba4e42283a469efc2e024f
+- - - - 4b8bf3e7b1996b390d3519ed6eda289110b620
+- - - - 37e839c60b18bd141a458541140cf4e5c00174
+- - - c5
+- - - - a68a82f915a56a43ff1288f38f8ea4dee09c71
+- - - - cc23111403e545780f0eb2cb2c83f7dbbe62b7
+- - - - 7bd22eda8f72b0538c61b48b12e87e07cca97c
+- - - 9c
+- - - - 6d6c1574ee3318aeca9bd86c58ca8822937036
+- - - - d4d152c65e582e668a236f05cf399d834369c0
+- - - 54
+- - - - 76007e8104046e87dabfc8213a750e919e2fca
+- - - 94
+- - - - 83ca8d9fedab9646d4405597bb8cde9d01d982
+- - - - bb122b54765c928b1a51300ac2ce31a5d572dc
+- - - c2
+- - - - 04f196124cca854e4dd1bc9382b92a195ecc52
+- - - - 24c1f9b0ea5140e272eb334608dd566a007d59
+- - - 76
+- - - - 3dfaec8fc96b21b69e01fe084d589199b4d005
+- - - - a05a1abb2f8cd9fb917ba1a8a25533c13c3d09
+- - - - c8f6c31eaf77313e9408da754232197d75fe36
+- - - - b44d7b789add302220ae4237c5e09b445d0379
+- - - ed
+- - - - fe983e1c12c5a67e9236b6add6bf19690c8de1
+- - - - a7044b4f6a0cd1d774782e90ed5a9e169f55ad
+- - - - da3f23605e9152e520ee14590a8221e01997f9
+- - - 48
+- - - - 43d1f2e825aeba2c66f449a4f96ef7c0a2134d
+- - - 14
+- - - - 39c8219d2e2457dc7be3778da482ab2ec470ee
+- - - 5e
+- - - - 46a438d049d1048876cb295e17000740c16800
+- - - d3
+- - - - 0c5f0efce57d1f28982212d4e8a2a7eceeaf7c
+- - - - 76caa46be4f40b2b0033663ddb45d58ae11c6e
+- - - - cf82e81a2040de9c0ac5a033c04daa831614b6
+- - - - 2ef2201c78fa87f1bc1ed1413b47fc7846f317
+- - - - 914e9451dd778b4ce90a1095a05090b33120a9
+- - - - 67c1064f67dbc5f2fcf5bd059145ecd567d8a2
+- - - fa
+- - - - f6daa9cda0ca2add9307a7b685c4ae6f5286f8
+- - - 06
+- - - - 374b25a3c939065ec423d937035ded1bbd013d
+- - - - a66500a9e95a38cceea5ef05baef388f39e2b2
+- - - - afe41328ca8335e0b0877b3c3dc764d40c449c
+- - - 59
+- - - - 14ac1060f96d2426ecf55a7463ea0538b2f1be
+- - - - b80ca063c65079da43139bc6a6868d3c2a9215
+- - - 17
+- - - - 175566408021d05001cbda07a230e1b1fecbf3
+- - - - 3e851205319cca26e95d81bdc165d66e59271c
+- - - - 6ca7f63b7c64a451d7757e09a0f36308aaf51e
+- - - - abe1fda99ca72ce737d60931d1962b6826168e
+- - - 2c
+- - - - 2eb2fe473e15f234f9b150410fef6e8a6eb062
+- - - fb
+- - - - 691c8c5beefacf2048a46fe6a5204e7cc834e7
+- - - - f66a11ddc7f86ace9161ce20f955c5344b10b9
+- - - 5d
+- - - - 220c4cc783a7a6afc298a400638f4c0c6782e5
+- - - c0
+- - - - 086f5e965d7512e47c6f0a6d3d32fd7a16d0f4
+- - - - 949911bef559987ba10aa40477d6e47963cb8c
+- - - - df7a9136edea212bcbae7147b0d241f7dd0f93
+- - - d0
+- - - - 2342af6636b5de19936ed4eb4128750975c3b4
+- - - - 7629990ac29b1eba759b4e970965ec025eb5c8
+- - - a5
+- - - - 3f9f4a29a5ff77890c65d48931f80d515f769a
+- - - - a3e67ac590942cd03949bcecec7165d9628795
+- - - 4f
+- - - - fe7f5a9bf74fd94161101582899fb62a00d10c
+- - - 0c
+- - - - 48530e0fa19d1e1c975d0ff416ff1fb2d0eb25
+- - - - e895433d44c3681bd75f29c3f55fc81b4352f4
+- - - - 6a84c8e3eb56df826ed0bc17e09bfe8a3e8910
+- - - de
+- - - - 6cde3d3af22c6898af3b94683da3b9a0251110
+- - - - 5ed3ecf9701b23adc4ef64512c95988f2c5918
+- - - - 8fdad14774842943cdafba59458cc3ef05c163
+- - - - 35aa2a4033579ea11ee10fe248a58f94249318
+- - - - 4e363f800ebbb0d66dc109f64fa95b2a8526f5
+- - - 7a
+- - - - 2f43173a1b9d386066ea0fa7b79fedf91a94e9
+- - - 05
+- - - - 84832d629818e196dc7cf6f20069c54d7b3c1d
+- - - - 3cae5789e03a00a3b80e273f5be589934f9c5d
+- - - - f2aedb57fa6d26480231558a1e8065164ba5a6
+- - - 81
+- - - - 921fd3876e60aeb992d9fad7b5ca26a95a0664
+- - - - 6fde6efe8d99dfcf4424b442424eda2e9ef144
+- - - - 7b6d48d125147013027d3462e1fd8ce3b3ff77
+- - - 66
+- - - - 35a9878b81fb8e12dda4d1ef84ab5227e80c0d
+- - - e2
+- - - - c18d1a300f4654f36e56e3bf2d66a0060d3140
+- - - - 51b4f1884bf73189dc3fb7a5f2d285813ac4b2
+- - - 46
+- - - - a56e398c105b69ef5788b55599b8aa681ad112
+- - - - c4062c278f27fb1e042aa0342610931eb2b04b
+- - - ef
+- - - - 6f4a95e07628386ce14c679a9e3dc31def5d54
+- - - 5c
+- - - - 6900f854c2d47d90c23df249aefb48f2406bcd
+- - - c1
+- - - - 8f09deab20b8871f533b6deba5f5f09bafff10
+- - - - dfc70aef7350ae9a84f38eac289ac943bf0062
+- - - - 3fe29bfd1c8360b5d7c818ddfe5b8b7f3dc1ac
+- - - eb
+- - - - 790fb4d0ebe3b1b1cc9e45f102a0d52ebe9bce
+- - - - f75a2b90e3eb259b8769e1b8201094b76efbf3
+- - - dc
+- - - - bf55239f5429333ada6ed758399a3b8e5fc7fe
+- - - - b9772840f767c191690bbf02ac24d4e818b901
+- - - - dce37cf104e0699f0d8eb47b5c94232d3fbb79
+- - - d2
+- - - - 50549cdc7343aafdd0d709dd02d6352d68a658
+- - - - 88eb7847408e85f8879fa166b082651c459245
+- - - a2
+- - - - 78f7ad7ec5f56ee1a0d9c980fcf04d114b2e15
+- - - 85
+- - - - 5a04d85d716ca3cc54ab9b01ae39fc4cb4ead4
+- - - f9
+- - - - ca817f4821c4b3b01b1d0320aeb9eeac0545b0
+- - - - 7a62906b434e4f8bf4b1c1575474f2b09ee2d9
+- - - - 10350fa817513f01e80810a3534f90c7fec979
+- - - - 51dcff4f0db137e61c89aa77f60f3e21d592a3
+- - FETCH_HEAD
+- - hooks
+- - - pre-rebase.sample
+- - - pre-applypatch.sample
+- - - push-to-checkout.sample
+- - - commit-msg.sample
+- - - fsmonitor-watchman.sample
+- - - applypatch-msg.sample
+- - - update.sample
+- - - pre-receive.sample
+- - - pre-commit.sample
+- - - pre-merge-commit.sample
+- - - post-update.sample
+- - - prepare-commit-msg.sample
+- - - pre-push.sample
+- - branches
+- - info
+- - - exclude
+- - index
+- - packed-refs
+- - description
+- - COMMIT_EDITMSG
+- - refs
+- - - heads
+- - - - main
+- - - remotes
+- - - - origin
+- - - - - HEAD
+- - - - - main
+- - - tags
+- - - stash
+- - logs
+- - - HEAD
+- - - refs
+- - - - heads
+- - - - - main
+- - - - remotes
+- - - - - origin
+- - - - - - HEAD
+- - - - - - main
+- - - - stash
+- .vscode
+- - settings.json
+- cpp03
+- - ex01
+- - - ScavTrap.hpp
+- - - ClapTrap.hpp
+- - - main.o
+- - - Makefile
+- - - ClapTrap.d
+- - - main.d
+- - - ScavTrap.d
+- - - main.cpp
+- - - ScavTrap.o
+- - - ClapTrap.cpp
+- - - ScavTrap.cpp
+- - - ClapTrap.o
+- - ex02
+- - - ScavTrap.hpp
+- - - ClapTrap.hpp
+- - - main.o
+- - - Makefile
+- - - FragTrap.d
+- - - FragTrap.cpp
+- - - ClapTrap.d
+- - - main.d
+- - - ScavTrap.d
+- - - FragTrap.hpp
+- - - main.cpp
+- - - ScavTrap.o
+- - - ClapTrap.cpp
+- - - ScavTrap.cpp
+- - - ClapTrap.o
+- - - FragTrap.o
+- - ex00
+- - - ClapTrap.hpp
+- - - Makefile
+- - - main.cpp
+- - - ClapTrap.cpp
+- - ex03
+- - - ScavTrap.hpp
+- - - ClapTrap.hpp
+- - - main.o
+- - - Makefile
+- - - FragTrap.d
+- - - FragTrap.cpp
+- - - ClapTrap.d
+- - - DiamondTrap.o
+- - - main.d
+- - - DiamondTrap.d
+- - - ScavTrap.d
+- - - FragTrap.hpp
+- - - DiamondTrap.cpp
+- - - main.cpp
+- - - ScavTrap.o
+- - - ClapTrap.cpp
+- - - ScavTrap.cpp
+- - - ClapTrap.o
+- - - FragTrap.o
+- - - DiamondTrap.hpp
+- .gitignore
+- cpp05
+- - ex01
+- - - Makefile
+- - - Colors.hpp
+- - - .gitignore
+- - - Form.cpp
+- - - Bureaucrat.cpp
+- - - test
+- - - main.cpp
+- - - Form.hpp
+- - - Bureaucrat.hpp
+- - ex02
+- - - ShrubberyCreationForm.cpp
+- - - ShrubberyCreationForm.hpp
+- - - Makefile
+- - - obj
+- - - - ShrubberyCreationForm.d
+- - - - main.o
+- - - - AForm.d
+- - - - ShrubberyCreationForm.o
+- - - - main.d
+- - - - Bureaucrat.d
+- - - - Bureaucrat.o
+- - - - AForm.o
+- - - Colors.hpp
+- - - Bureaucrat.cpp
+- - - test
+- - - main.cpp
+- - - AForm.cpp
+- - - README.md
+- - - AForm.hpp
+- - - Bureaucrat.hpp
+- - ex00
+- - - Makefile
+- - - obj
+- - - - main.o
+- - - - main.d
+- - - - Bureaucrat.d
+- - - - Bureaucrat.o
+- - - Colors.hpp
+- - - .gitignore
+- - - Bureaucrat.cpp
+- - - test
+- - - main.cpp
+- - - README.md
+- - - Bureaucrat.hpp
+- cpp00
+- - ex01
+- - - Makefile
+- - - Contact.cpp
+- - - Contact.hpp
+- - - Color.hpp
+- - - PhoneBook.hpp
+- - - PhoneBook.cpp
+- - - main.cpp
+- - ex02
+- - - Makefile
+- - - tests.cpp
+- - - Account.hpp
+- - - Account.cpp
+- - ex00
+- - - Makefile
+- - - megaphone.cpp
+- cpp04
+- - ex01
+- - - WrongAnimal.hpp
+- - - Animal.hpp
+- - - Dog.cpp
+- - - Makefile
+- - - WrongCat.cpp
+- - - WrongCat.hpp
+- - - obj
+- - - - WrongAnimal.d
+- - - - main.o
+- - - - Brain.d
+- - - - Dog.d
+- - - - main.d
+- - - - Cat.d
+- - - - Animal.o
+- - - - Brain.o
+- - - - WrongCat.d
+- - - - Cat.o
+- - - - Animal.d
+- - - - WrongCat.o
+- - - - Dog.o
+- - - - WrongAnimal.o
+- - - Animal.cpp
+- - - Dog.hpp
+- - - Brain.hpp
+- - - Cat.hpp
+- - - Colors.hpp
+- - - Cat.cpp
+- - - Brain.cpp
+- - - test
+- - - main.cpp
+- - - WrongAnimal.cpp
+- - ex02
+- - - WrongAnimal.hpp
+- - - Dog.cpp
+- - - Makefile
+- - - AAnimal.hpp
+- - - WrongCat.cpp
+- - - WrongCat.hpp
+- - - obj
+- - - - WrongAnimal.d
+- - - - main.o
+- - - - Brain.d
+- - - - Dog.d
+- - - - AAnimal.o
+- - - - main.d
+- - - - AAnimal.d
+- - - - Cat.d
+- - - - Brain.o
+- - - - WrongCat.d
+- - - - Cat.o
+- - - - WrongCat.o
+- - - - Dog.o
+- - - - WrongAnimal.o
+- - - Dog.hpp
+- - - AAnimal.cpp
+- - - Brain.hpp
+- - - Cat.hpp
+- - - Colors.hpp
+- - - Cat.cpp
+- - - Brain.cpp
+- - - test
+- - - main.cpp
+- - - WrongAnimal.cpp
+- - ex00
+- - - WrongAnimal.hpp
+- - - Animal.hpp
+- - - Dog.cpp
+- - - Makefile
+- - - WrongCat.cpp
+- - - WrongCat.hpp
+- - - obj
+- - - - WrongAnimal.d
+- - - - main.o
+- - - - Dog.d
+- - - - main.d
+- - - - Cat.d
+- - - - Animal.o
+- - - - WrongCat.d
+- - - - Cat.o
+- - - - Animal.d
+- - - - WrongCat.o
+- - - - Dog.o
+- - - - WrongAnimal.o
+- - - Animal.cpp
+- - - Dog.hpp
+- - - Cat.hpp
+- - - Colors.hpp
+- - - Cat.cpp
+- - - test
+- - - main.cpp
+- - - WrongAnimal.cpp
+- - ex03
+- - - MateriaSource.cpp
+- - - Makefile
+- - - Cure.hpp
+- - - ICharacter.hpp
+- - - MateriaSource.hpp
+- - - obj
+- - - - Cure.o
+- - - - Character.d
+- - - - MateriaSource.o
+- - - - main.o
+- - - - Ground.o
+- - - - Ground.d
+- - - - Ice.o
+- - - - main.d
+- - - - AMateria.d
+- - - - Cure.d
+- - - - MateriaSource.d
+- - - - Character.o
+- - - - Ice.d
+- - - - AMateria.o
+- - - Character.hpp
+- - - Ground.cpp
+- - - Cure.cpp
+- - - Colors.hpp
+- - - test
+- - - main.cpp
+- - - Ice.hpp
+- - - Character.cpp
+- - - AMateria.cpp
+- - - Ground.hpp
+- - - AMateria.hpp
+- - - Ice.cpp
+- cpp01
+- - ex05
+- - - Makefile
+- - - harl
+- - - main.cpp
+- - - Harl.cpp
+- - - Harl.hpp
+- - ex06
+- - - harlFilter
+- - - Makefile
+- - - main.cpp
+- - - Harl.cpp
+- - - Harl.hpp
+- - ex01
+- - - zombieHorde.cpp
+- - - Makefile
+- - - Zombie.hpp
+- - - main.cpp
+- - - Zombie.cpp
+- - ex02
+- - - main.o
+- - - Makefile
+- - - main.cpp
+- - - horde_test
+- - - hiThisIsBrain
+- - ex00
+- - - zombie
+- - - Makefile
+- - - randomChump.cpp
+- - - Zombie.hpp
+- - - newZombie.cpp
+- - - main.cpp
+- - - Zombie.cpp
+- - ex04
+- - - main.o
+- - - Makefile
+- - - test_cases
+- - - main.d
+- - - test.replace
+- - - loremIpsum.replace
+- - - loremIpsum
+- - - test
+- - - main.cpp
+- - - sedIsForLosers
+- - ex03
+- - - HumanB.cpp
+- - - HumanA.cpp
+- - - Makefile
+- - - unnecessaryViolence
+- - - Weapon.hpp
+- - - Weapon.cpp
+- - - main.cpp
+- - - HumanB.hpp
+- - - HumanA.hpp
+- cpp02
+- - ex01
+- - - Makefile
+- - - fixed
+- - - main.cpp
+- - - Fixed.cpp
+- - - Fixed.hpp
+- - ex02
+- - - Makefile
+- - - fixed
+- - - main.cpp
+- - - Fixed.cpp
+- - - Fixed.hpp
+- - ex00
+- - - Makefile
+- - - fixed
+- - - main.cpp
+- - - Fixed.cpp
+- - - Fixed.hpp
+- - ex03
+- - - Makefile
+- - - fixed
+- - - Point.hpp
+- - - bsp.cpp
+- - - Point.cpp
+- - - main.cpp
+- - - Fixed.cpp
+- - - Fixed.hpp
