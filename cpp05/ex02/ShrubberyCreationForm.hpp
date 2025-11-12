@@ -9,7 +9,6 @@ class ShrubberyCreationForm : public AForm
     private:
     std::string _target;
     void _makeShrub() const;
-    bool _shrubMade;
 
     public:
     ShrubberyCreationForm();
