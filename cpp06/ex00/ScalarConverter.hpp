@@ -11,8 +11,6 @@ class ScalarConverter
     ~ScalarConverter();
     ScalarConverter & operator=(const ScalarConverter& other);
     static std::string getType(std::string literal);
-    static bool isFun(std::string literal);
-    static void handleFun(std::string literal);
     static void printResultFromString(std::string charStr, std::string intStr, std::string floatStr, std::string doubleStr);
     static void printResultFromNum(std::string charStr, int i, float f, double d);
 

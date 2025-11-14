@@ -26,15 +26,9 @@ ScalarConverter & ScalarConverter::operator=(const ScalarConverter& other)
 void ScalarConverter::convert(std::string literal)
 {
     if (literal.length() == 0)
-        return;
-    if (isFun(literal))
-    {
-        handleFun(literal);
-        return ;
-    }
-    
+        return;    
     std::string type = getType(literal);
-    std::cout << type << std::endl;
+    // std::cout << type << std::endl;
     if (type == "char")
     {
         fromChar(literal);
@@ -56,6 +50,10 @@ std::string ScalarConverter::getType(std::string literal)
     int dot = 0;
     if (literal.length() == 1 && !std::isdigit(static_cast<unsigned char>(literal[0])) )
         return "char";
+    if (literal == "-inf" || literal == "+inf" || literal == "inf" || literal == "nan")
+        return "double";
+    else if (literal == "-inff" || literal == "+inff" || literal == "inff"|| literal == "nanf")
+        return "float";
     int i = 0;    
     if (literal[i] == '+' || literal[i] == '-')
         i++;
@@ -79,32 +77,7 @@ std::string ScalarConverter::getType(std::string literal)
     return "invalid";
     
 }
-// maybe hadle unsigned inf and inff as well?
-bool ScalarConverter::isFun(std::string literal)
-{
-    return (literal == "-inff" || literal == "+inff" || literal == "nanf"
-    || literal == "-inf" || literal == "+inf" || literal == "nan");
-}
 
-void ScalarConverter::handleFun(std::string literal)
-{
-    std::string charStr = "impossible";
-    std::string floatStr;
-    std::string doubleStr;
-    if (literal == "nan" || literal == "+inf" || literal == "-inf")
-    {
-        doubleStr = literal;
-        floatStr = literal + "f";
-    }
-    else
-    {
-        floatStr = literal;
-        doubleStr = literal;
-        doubleStr.erase(literal.length() - 1);
-    }
-    printResultFromString(charStr, charStr, floatStr, doubleStr);
-
-}
 
 void ScalarConverter::printResultFromString(std::string charStr, std::string intStr, std::string floatStr, std::string doubleStr)
 {
@@ -121,21 +94,23 @@ int ScalarConverter::charToInt(char ch)
 
 void ScalarConverter::printResultFromNum(std::string charStr, int i, float f, double d)
 {
-
-    std::cout << "char: " << charStr << std::endl;
-    if (i-f >=1 || i-f <= -1)
+    if (charStr.length() == 1)
+        std::cout << "char: '" << charStr << "'" << std::endl;
+    else
+        std::cout << "char: " << charStr << std::endl;
+    if (i-f >=1 || i-f <= -1 || (i == 0 && charStr == "impossible"))
         std::cout << "int: " << "impossible" << std::endl;
     else
         std::cout << "int: " << i << std::endl;
     if (f/(float)i == 1)
     {
-        std::cout << "float: " << f << ".0" << std::endl;
-        std::cout << "double: " << d << ".0f" << std::endl;
+        std::cout << "float: " << f << ".0f" << std::endl;
+        std::cout << "double: " << d << ".0" << std::endl;
     }
     else
     {
-        std::cout << "float: " << f << std::endl;
-        std::cout << "double: " << d << "f"<< std::endl;
+        std::cout << "float: " << f << "f"<< std::endl;
+        std::cout << "double: " << d << std::endl;
     }
      
     
@@ -151,8 +126,8 @@ void ScalarConverter::fromChar(std::string literal)
         return ;
     }
     int i = charToInt(literal[0]);
-    float f = (float)i;
-    double d = (double)i;
+    float f = static_cast<float>(i);
+    double d = static_cast<double>(i);
     printResultFromNum(literal, i, f, d);
 }
 
@@ -161,8 +136,8 @@ void ScalarConverter::fromInt(std::string literal)
     std::string ch;
     int i = atoi(literal.c_str());
     ch = getCharFromInt(i);
-    double d = (double)i;
-    float f = (float)i;
+    double d = atof(literal.c_str());
+    float f = static_cast<float>(d);
     printResultFromNum(ch, i, f, d);
 }
 
@@ -170,9 +145,9 @@ void ScalarConverter::fromDouble(std::string literal)
 {
     int i = atoi(literal.c_str());
     double d = atof(literal.c_str());
-    float f = (float)d;
+    float f = static_cast<float>(d);
     std::string ch;
-    if ((double)i / d == 1)
+    if (static_cast<double>(i) / d == 1)
         ch = getCharFromInt(i);
     else
         ch = "impossible";
@@ -183,9 +158,9 @@ void ScalarConverter::fromDouble(std::string literal)
 std::string ScalarConverter::getCharFromInt(int i)
 {
     std::string ch;
-    if (i >= 0 && i <= 127 && std::isprint(static_cast<unsigned char>(i)))
+    if (i >= 0 && i <= 126 && std::isprint(static_cast<unsigned char>(i)))
         ch = i;
-    else if (i >= 0 && i <= 127)
+    else if (i >= 0 && i <= 126)
         ch = "Non displayable";
     else
         ch = "impossible";
