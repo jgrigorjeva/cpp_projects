@@ -66,25 +66,19 @@ void Character::equip(AMateria* m)
         std::cout << R << "Nonexistent materia!\n" << RST;
         return;
     }
-    for (int i = 0; i < 4; ++i)
-        if (inventory[i] == m)
-        {
-            std::cout << R << "This materia cannot be equipped\n" << RST;
-            return; // don’t equip same pointer twice
-        } 
-            
-    for (int i = 0; i < _personalGround.get_count(); ++i)
-        if (_personalGround.items[i] == m) 
-        {
-            std::cout << R << "This materia cannot be equipped\n"<< RST;
-            return; // don’t equip same pointer to a dropped item
-        }
+
+    if (m->get_was_equipped())
+    {
+        std::cout << R << "This materia cannot be equipped\n" << RST;
+        return; // don’t equip same pointer twice
+    }
     for (int i = 0; i < 4; i++)
     {
         if (!inventory[i])
         {
             inventory[i] = m;
             std::cout << "Materia of type " << m->getType() << " equipped\n";
+            m->set_was_equipped();
             return ;
         }
 
@@ -92,6 +86,7 @@ void Character::equip(AMateria* m)
     // delete m;
     // m = NULL;
     _personalGround.storeMateria(m);
+    m->set_was_equipped();
     std::cout << R << "Materia was not equipped\n"<< RST;
 }
 void Character::use(int idx, ICharacter& target)

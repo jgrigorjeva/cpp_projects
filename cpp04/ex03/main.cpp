@@ -60,7 +60,7 @@ int	main(void)
 	std::cout << BOLD << "\n*** Test invalid use() ***\n" << RST;
 	ICharacter *you = new Character("you");
 	you->use(1, *me);
-	// you->equip(tmp);
+	you->equip(tmp);
 
 	delete you;
 	delete bob;

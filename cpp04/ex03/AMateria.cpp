@@ -1,7 +1,7 @@
 #include "AMateria.hpp"
 #include "Colors.hpp"
 
-AMateria::AMateria()
+AMateria::AMateria(): _was_equipped(false)
 {
 	// std::cout << BG << "AMateria default constructor\n" << RST;
 }
@@ -21,6 +21,7 @@ AMateria &AMateria::operator=(const AMateria &other)
 	if (this != &other)
 	{
 		this->_type = other._type;
+		_was_equipped = other._was_equipped;
 	}
 	return (*this);
 }
@@ -38,4 +39,14 @@ std::string const & AMateria::getType() const
 void AMateria::use(ICharacter& target)
 {
 	std::cout  << "AMateria default use on" << target.getName() << std::endl;
+}
+
+bool AMateria::get_was_equipped()
+{
+	return _was_equipped;
+}
+
+void AMateria::set_was_equipped()
+{
+	_was_equipped = true;
 }

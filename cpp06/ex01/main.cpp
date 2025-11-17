@@ -13,5 +13,5 @@ int main()
     Data* deserialized = Serializer::deserialize(serial);
     std::cout << "Deserialized answer: " << deserialized->answer << std::endl;
 
-
+    delete ptr;
 }

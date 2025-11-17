@@ -10,6 +10,7 @@ class AMateria
 {
     protected:
 		std::string _type;
+		bool		_was_equipped;
     public:
 		AMateria();
 		AMateria(std::string const & type);
@@ -19,5 +20,7 @@ class AMateria
 		std::string const & getType() const; //Returns the materia type
 		virtual AMateria* clone() const = 0;
 		virtual void use(ICharacter& target);
+		bool get_was_equipped();
+		void set_was_equipped();
 };
 #endif
