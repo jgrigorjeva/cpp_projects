@@ -23,4 +23,4 @@ Array(unsigned int n): _size(n)
         _array = new T[n]();
 }
 ```
-The element values should be initialized, hence the **()** in **T[n]()**. The () indicate that if T is a builtin type, its value is set to 0 (for int), 0.0 (for float), NULL (for a pointer), etc. If T was a custom type, we could do without the (), since T[n] calls a default constructor for that class -> the T is defined by the constructor. If builtin elements were created without initialization, their values would be random.
+The element values should be initialized, hence the **()** in **T[n]()**. The () indicate that if T is a primitive type, its value is set to 0 (for int), 0.0 (for float), NULL (for a pointer), etc. If T was a custom type, we could do without the (), since T[n] calls a default constructor for that class -> the T is defined by the constructor. If primitive elements were created without initialization, their values would be random.
