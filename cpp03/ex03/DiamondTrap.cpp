@@ -51,3 +51,8 @@ void DiamondTrap::whoAmI()
 {
     std::cout << "I am " << _name << ", and " << ClapTrap::_name << std::endl;
 }
+
+void DiamondTrap::printPoints()
+{
+    std::cout<< "Name: " << _name << ", hit points: " << _hit_points << ", energy ponts: " << _energy_points << ", attack damage: " << _attack_damage<< std::endl;
+}

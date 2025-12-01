@@ -4,6 +4,7 @@ int main()
 {
     std::cout<<"\n*** Constructors ***\n";
     DiamondTrap serena("Serena");
+    serena.printPoints();
     DiamondTrap bob(serena);
     DiamondTrap tom = bob;
 
