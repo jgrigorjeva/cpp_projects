@@ -6,7 +6,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD -MP
 NAME     = test
 
 # Source and object
-SRC      = main.cpp
+SRC      = main.cpp Span.cpp
 OBJ_DIR  = obj
 OBJ      = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRC))
 DEP      = $(patsubst %.cpp,$(OBJ_DIR)/%.d,$(SRC))

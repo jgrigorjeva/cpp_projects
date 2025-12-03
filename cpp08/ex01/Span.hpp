@@ -3,12 +3,13 @@
 
 #include <exception>
 #include <vector>
+#include <iostream>
 
 class Span
 {
     private:
     unsigned int _maxN;
-    unsigned int _storedN;
+    // unsigned int _storedN;
     std::vector<int> _container;
 
     public:
@@ -24,7 +25,9 @@ class Span
     void addNumber(const int num);
     int shortestSpan() const;
     int longestSpan() const;
-    void addNumberRange(int start, int end); // what exactly to do?
+    void addNumbers(const std::size_t len, const int num); // appends number num len times
+    unsigned int size() const;
+    void print();
 
     // exceptions
     class SpanOverflowException : public std::exception{
@@ -35,7 +38,8 @@ class Span
         public:
         const char* what() const throw();
     };
-
 };
+
+// std::ostream& operator<<(std::ostream& out, const Span& src)
 
 #endif
