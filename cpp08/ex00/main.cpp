@@ -43,10 +43,6 @@ int main()
     iterl = easyfind(lst, 6);
     std::cout<<"*iter: " << *iterl << std::endl;
 
-     // forward list is from c++11
-    // array is from c++11
-    // inplace_vector is from c++26
-    // hive is from c++26
     std::cout << BG "*** DEQUE ***\n";
     std::deque<int> deq;
     for (int i = 0; i < 10; i++)

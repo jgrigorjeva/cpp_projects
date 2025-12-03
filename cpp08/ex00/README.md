@@ -47,6 +47,7 @@ Where exactly does iterator point? This depends on the container type. E.g.:
 - points to a tree node
 - dereferencing gives a std::pair<const K, V>
 
+# Sequence containers
 ## std::vector
 Vectors (class Vector) are **dynamic arrays**. They can be declared with or without a given size, and then we can add elements to them. In the background, you create an array of a given size, when elements are added and if the updated array exceeds the memory allocated previously, new memory is allocated, the old elements are copied to it, new elements are added, and the old array is deleted (memory freed).
 The c++98 version is old and clumsy and does not allow for this kind of initialization:
@@ -70,6 +71,9 @@ The vector also allows initialization using the fill constructor (fills the cont
 std::vector<int> v(5, 42);   // 5 elements, all = 42
 ```
 
+## std::inplace_vector
+**since c++26**
+
 ## std::list
 Lists are implemented like doubly linked lists. Therefore, it is easy to add elements to both sides (front and back). Inserting or erasing elements from inside positions is also possible. It lacks **direct** access to elements via index, but iterating is effective in both directions.
 Initialization of a list is same as for a vector:
@@ -92,10 +96,20 @@ std::list<int> lst(4, 7);   // {7,7,7,7}
 
 ## std::forward_list
 Similar to std::list, but is implemented as as singly-linked list. It lacks direct access to elements via index and only directly supports iterations in forward direction.
-**From c++11**
+**since c++11**
 
 ## std::deque
 Pronounced as "deck". Unlike std::vector (which saves memory as a continuous block), the deque stores 
+
+## std::array
+This container encapsulates fixed size arrays. std::arrays have a fixed size and do not manage the allocation of its elements through an allocator. Unlike a C-style array, it does not automatically decay to a pointer. 
+**since c++11**
+
+### std::hive
+**since c++26**
+
+# Associative containers
+No need to handle them in the first exercise.
 
 ## std::set
 Set is an associative container: contains a sorted set of unique objects of type **Key**. 
