@@ -1,2 +1,3 @@
-obj/main.o: main.cpp Span.hpp
+obj/main.o: main.cpp Span.hpp Colors.hpp
 Span.hpp:
+Colors.hpp:

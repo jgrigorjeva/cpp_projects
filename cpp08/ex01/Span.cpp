@@ -1,5 +1,6 @@
 #include "Span.hpp"
 #include "Colors.hpp"
+#include <algorithm>
 
 Span::Span(): _maxN(0)
 {
@@ -44,14 +45,27 @@ int Span::shortestSpan() const
 {
     if (_container.size() < 2)
         throw SpanImpossibleException();
-    return 0;
+    // make a temporary sorted vector
+    std::vector<int> temp = _container;
+    std::sort(temp.begin(), temp.end());
+    int sSpan = temp[temp.size() - 1] - temp[0];
+
+    for (long unsigned int i = 1; i < temp.size(); i++)
+    {
+        if (temp[i] - temp[i-1] < sSpan)
+            sSpan = temp[i] - temp[i-1];
+    }
+    return sSpan;
 }
 
 int Span::longestSpan() const
 {
     if (_container.size() < 2)
         throw SpanImpossibleException();
-    return 0;
+    // make a temporary sorted vector
+    std::vector<int> temp = _container;
+    std::sort(temp.begin(), temp.end());
+    return temp[temp.size() - 1] - temp[0];
 }
 
 unsigned int Span::size() const
@@ -61,6 +75,9 @@ unsigned int Span::size() const
 
 void Span::print()
 {
+    std::cout << BOLD "Container elements: " RST;
+    if (_container.size() == 0)
+        std::cout << "Container is empty\n";
     for (unsigned int i = 0; i < _container.size(); i++)
     {
         std::cout << _container[i];
