@@ -43,14 +43,15 @@ int main()
     iterl = easyfind(lst, 6);
     std::cout<<"*iter: " << *iterl << std::endl;
 
-    std::cout << BG "*** DEQUE ***\n";
+    std::cout << BG "*** DEQUE ***\n" RST;
     std::deque<int> deq;
     for (int i = 0; i < 10; i++)
     {
         deq.push_back(i);
     }
+    print_range(deq.begin(), deq.end());
     std::deque<int>::iterator iterd;
-    std::cout << BB "needle does not match deque elements: " RST;
+    std::cout << BR "\nneedle does not match deque elements: " RST;
     iterd = easyfind(deq, -100);
     std::cout<<"*iter: " << *iterd << std::endl;
     std::cout << BB "needle does match deque elements: " RST;

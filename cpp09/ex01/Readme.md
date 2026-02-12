@@ -1,0 +1,1 @@
+We are supposed to load an argument in the Reversed Polish notation (for instance  "8 9 * 9 - 9 - 9 - 4 - 1 +"); Two vectors seem to be a good choice to store the numbers and the oparators separately.

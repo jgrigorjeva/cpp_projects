@@ -50,6 +50,7 @@
         "ranges": "cpp",
         "span": "cpp",
         "fstream": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "list": "cpp"
     }
 }

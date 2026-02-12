@@ -18,7 +18,8 @@ class  Array
         if (n == 0)
             _array = NULL;
         else
-            _array = new T[n]();
+            _array = new T[n];
+            // _array = new T[n]();
     }
     Array(const Array& other): _size(other._size)
     {

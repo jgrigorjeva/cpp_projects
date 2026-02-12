@@ -7,8 +7,12 @@ int main()
     std::cout << BOLD "Testing int arrays\n" RST;
     Array<int> emptyIntArr;
     Array<int> intArr(10);
+    for (int i = 0; i < 10; i++)
+    {
+        std::cout << intArr[i] << " ";
+    }
 
-    std::cout << "emptyIntArr size: " << emptyIntArr.size()<< std::endl;
+    std::cout << "\nemptyIntArr size: " << emptyIntArr.size()<< std::endl;
     try
     {
         std::cout << "emptyIntArr element 0: " << emptyIntArr[0] << std::endl;

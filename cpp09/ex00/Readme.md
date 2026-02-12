@@ -1,0 +1,1 @@
+We are supposed to read a store a file that contains lines in the format **date | value**. Since both the date and the value are not unique, **multimap** seems to be the container of choice here.
