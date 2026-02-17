@@ -86,7 +86,7 @@ Continue comparing the two smallest elements and outputting the result:
 
 $$
 087, 503 \begin{cases}
-    703, 765 \\ % & is your "\tab"-like command (it's a tab alignment character)
+    703, 765 \\ 
     512, 677
 \end{cases}
 $$
