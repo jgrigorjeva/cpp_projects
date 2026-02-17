@@ -76,7 +76,7 @@ two arrays:
 
 $$
 \begin{cases}
-    503, 703, 765 \\ % & is your "\tab"-like command (it's a tab alignment character)
+    503, 703, 765 \\ 
     087, 512, 677
 \end{cases}
 $$
@@ -89,7 +89,7 @@ Output the smaller element:
 
 $$
 087 \begin{cases}
-    503, 703, 765 \\ % & is your "\tab"-like command (it's a tab alignment character)
+    503, 703, 765 \\
     512, 677
 \end{cases}
 $$
@@ -119,11 +119,7 @@ $$
 Now we have a sorted array. This approach can be used to sort a single
 unsorted array, for example as in the Straight two-way merge sorting
 (Knuth 1998) (there are many flavours to Merge sorting, and this is one
-of them) `<!--
-Source - https://stackoverflow.com/a/52003495
-Posted by Roman Vogt, modified by community. See post 'Timeline' for change history
-Retrieved 2026-02-16, License - CC BY-SA 4.0
--->`{=html}
+of them)
 
 <center>
 `<img src='./Straight_merge_sort.PNG' width='700' />`{=html}
@@ -174,7 +170,6 @@ $b_i < a_i$, therefore $b_i$ must go to the left from $a_i$. The array
 $b_i$ is inserted into, contains all the smaller $a$ elements
 ($a_1, a_2, ..., a_{i-1}$), and also some of the $b$ elements inserted
 previously. After insertion of $b_1$, the configuration is:
-`<!-- Let's denote the newly inserted $b$ elements as $c$.  -->`{=html}
 
                    b₂      b₃     b₄     b₅      b₆      b₇      b₈     b₉     b₁₀     b₁₁
                    ↓       ↓      ↓      ↓       ↓       ↓       ↓      ↓      ↓       
