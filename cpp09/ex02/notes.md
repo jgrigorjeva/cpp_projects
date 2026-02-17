@@ -4,7 +4,8 @@ bibliography: references.bib
 
 <!-- link the references using pandoc
 bash:
-pandoc Readme.md --citeproc --csl=apa.csl -s -t gfm -o README.md -->
+pandoc notes.md  --citeproc -t markdown -o README.md
+-->
 
 # Merge insertion sort
 *a method discovered by Lester Ford, Jr. and Selmer Johnson*
