@@ -120,9 +120,9 @@ b₁      b₂      b₃     b₄     b₅      b₆      b₇      b₈     b�
 ↓       ↓       ↓      ↓      ↓       ↓       ↓       ↓      ↓      ↓       
 a₁  →   a₂  →   a₃  →  a₄  →  a₅  →   a₆  →   a₇  →   a₈  →  a₉  →  a₁₀  
 ```
-In this notation, the arrow always points from the smaller element to the larger element: $a_1 → a_2$ if $a_1 < a_2$
+In this notation, the arrow always points from the smaller element to the larger element: $a_1 → a_2$ if $a_1 < a_2$. The bottom array containing the sorted elements is called the **main chain**.
 
-4. now start inserting the $b_i$ into the sorted $a_j$ array. We will use the binary insertion for that. In order to optimize the number of comparisons needed in the insertion of each element, the $b_i$ will be inserted in a **specific order**.
+4. now start inserting the $b_i$ into the sorted $a_j$ array (main chain). We will use the binary insertion for that. In order to optimize the number of comparisons needed in the insertion of each element, the $b_i$ will be inserted in a **specific order**.
 
 ### What specific order?
 When inserting a $b$ elenemt into the sorted array, we know that $b_i < a_i$, therefore $b_i$ must go to the left from $a_i$. The array $b_i$ is inserted into, contains all the smaller $a$ elements ($a_1, a_2, ..., a_{i-1}$), and also some of the $b$ elements inserted previously. After insertion of $b_1$, the configuration is:
