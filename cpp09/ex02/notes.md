@@ -1,12 +1,3 @@
----
-bibliography: references.bib
----
-
-<!-- link the references using pandoc
-bash:
-pandoc notes.md  --citeproc -t markdown -o README.md
--->
-
 # Merge insertion sort
 *a method discovered by Lester Ford, Jr. and Selmer Johnson*
 
@@ -59,7 +50,7 @@ This will be an important point when we start inserting elements in the merge-in
 
 ## 2. Sorting by merging
 
-Sorting by merging assumes combining two sorted files/arrays into one sorted array. For example (from [@Knuth1998]), we can start with these two arrays:
+Sorting by merging assumes combining two sorted files/arrays into one sorted array. For example (from [Knuth, 1998, p. 158]), we can start with these two arrays:
 
 $$
 \begin{cases}
@@ -105,7 +96,7 @@ $$
 $$
 
 Now we have a sorted array.
-This approach can be used to sort a single unsorted array, for example as in the Straight two-way merge sorting [@Knuth1998] (there are many flavours to Merge sorting, and this is one of them)
+This approach can be used to sort a single unsorted array, for example as in the Straight two-way merge sorting [Knuth, 1998, p.163] (there are many flavours to Merge sorting, and this is one of them)
 
 <center>
  <img src='./Straight_merge_sort.PNG' width='700' />
@@ -115,7 +106,7 @@ The vertical lines denote margins of arrays being compared. You can see that we 
 
 You may notice that the Insertion sort is a special case of the Merge sort when a one-element array is merged with a sorted n-element array.
 
-I will not go into the Merge sort any further since its connection to the Merge-insertion sort is rather loose. If you are interested in more types of the Merge sort, have a look in [@Knuth1998], it provides a detailed analysis of them as well.
+I will not go into the Merge sort any further since its connection to the Merge-insertion sort is rather loose. If you are interested in more types of the Merge sort, have a look in [Knuth, 1998, pp. 158-168], it provides a detailed analysis of them as well.
 
 ## 3. Finally, all together: Merge-insertion sort
 Here we actually need the records to contain not only the key, but also a reference to another record. We will illustrate the algorithm on sorting 21 elements.
@@ -166,3 +157,4 @@ $J_n​=J_{n−1}​+2J_{n−2}​$
 
 
 ## References
+[1] Knuth, D. Ervin. (1998). The art of computer programming. Volume 3, Sorting and searching (Vol. 3). Addison-Wesley.
