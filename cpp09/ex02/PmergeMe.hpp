@@ -2,6 +2,7 @@
 #define PMERGEME
 
 #include <vector>
+#include <deque>
 #include <utility>
 #include <iostream>
 #include "inputValidation.hpp" //for printing the single vector
@@ -14,8 +15,13 @@
 # define DEBUG_PRINT(x)
 #endif
 
+extern volatile int g_count;
+
 std::vector<int> sortVector(std::vector<int> &unsorted);
 std::vector<int> getSortedIndicesVec(std::vector<int> &unsorted);
+
+std::deque<int> sortDeque(std::deque<int> &unsorted);
+std::deque<int> getSortedIndicesDeque(std::deque<int> &unsorted);
 
 template <typename T>
 int findPosition(T& to_sort, int b, int start, int end);
@@ -24,11 +30,9 @@ int findPosition(T& to_sort, int b, int start, int end);
 template <typename T>
 std::pair<std::pair<int, int>, std::pair<int, int> > makeDoublePair(T& sequence, int index);
 
-// std::vector<int> sort_deque(std::vector<int> &unsorted);
 
-
-template <typename T>
-T fillPairs(std::vector<int> &unsorted)
+template <typename T, typename S>
+T fillPairs(S &unsorted)
 {
     T to_sort;
     int full_pair = unsorted.size() / 2;
@@ -52,8 +56,8 @@ T fillPairs(std::vector<int> &unsorted)
     return (to_sort);
 }
 
-template <typename T>
-T sortWithIndices(T &sequence, std::vector<int> &indices)
+template <typename T, typename S>
+T sortWithIndices(T &sequence, S &indices)
 {
     T new_sequence;
     if (indices.size() == 1)
@@ -100,9 +104,6 @@ T getJIndexes(std::size_t max_index)
     {
         int J = Jacobstahl[i - 1] + 2*Jacobstahl[i - 2];
         Jacobstahl.push_back(J);
-
-        // if (J > (int)max_index)
-        //     break;
     }
 
     T indexes;
@@ -112,7 +113,6 @@ T getJIndexes(std::size_t max_index)
     indexes.push_back(Ja);
     int index = Jb;
     bool max_index_crossed = false;
-    // for (int i = Jb; i >= Ja; i++)
     while (index > 0)
     {
         // std::cout << "index: "<< index << ", max index: " << max_index << ", Ja: " << Ja << ", Jb: " << Jb << std::endl;
@@ -134,9 +134,6 @@ T getJIndexes(std::size_t max_index)
             Jb = Jacobstahl[++j];
             index = Jb;
         }
-        
-        
-
     }
     
     return indexes;
@@ -218,22 +215,7 @@ int findPosition(T& to_sort, int b, int start, int end)
 
 }
 
-// template <typename T>
-// T getJacobstahl(std::size_t max_index)
-// {
-//     T Jacobstahl;
-//     Jacobstahl.push_back(1);
-//     Jacobstahl.push_back(3);
 
-//     for (std::size_t i = 2; i < max_index; i++)
-//     {
-//         int J = Jacobstahl[i - 1] + 2*Jacobstahl[i - 2];
-//         Jacobstahl.push_back(J);
 
-//         if (J > max_index)
-//             break;
-//     }
-//     return Jacobstahl;
-// }
 
 #endif
