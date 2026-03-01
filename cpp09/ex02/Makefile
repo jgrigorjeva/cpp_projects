@@ -6,7 +6,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD -MP
 NAME     = PmergeMe
 
 # Source and object
-SRC      = main.cpp inputValidation.cpp
+SRC      = main.cpp inputValidation.cpp PmergeMe.cpp
 OBJ_DIR  = obj
 OBJ      = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRC))
 DEP      = $(patsubst %.cpp,$(OBJ_DIR)/%.d,$(SRC))
@@ -34,6 +34,9 @@ fclean: clean
 
 re: fclean all
 
+debug: CXXFLAGS += -DDEBUG
+debug: re
+
 -include $(DEP)
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re debug

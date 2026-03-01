@@ -48,12 +48,12 @@ bool parseInput(char *arg, std::vector<int> &sequence)
     return true;
 }
 
-void printInput(std::vector<int> sequence)
-{
-    for (std::vector<int>::iterator it = sequence.begin(); it != sequence.end(); ++it)
-        std::cout << *it << ", ";
-    std::cout << std::endl;
-}
+// void printContainerSingles(std::vector<int> sequence)
+// {
+//     for (std::vector<int>::iterator it = sequence.begin(); it != sequence.end(); ++it)
+//         std::cout << *it << ", ";
+//     std::cout << std::endl;
+// }
 
 bool duplicatesFound(std::vector<int> sequence)
 {

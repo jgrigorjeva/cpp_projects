@@ -2,6 +2,9 @@
 #include <vector>
 
 #include "inputValidation.hpp"
+#include "PmergeMe.hpp"
+
+volatile int g_count;
 
 // If portable code should be produed, use _TCHAR instead of char for argv type
 int main(int argc, char **argv)
@@ -16,8 +19,13 @@ int main(int argc, char **argv)
     for (int i = 1; i < argc; i++)
         if (!parseInput(argv[i], sequence))
             return 1;
-    printInput(sequence);
+    printContainerSingles(sequence, "The original unsorted sequence: ");
     if (inputInvalid(sequence))
         return (1);
+    g_count = 0;
+    std::vector<int> sorted = sortVector(sequence);
+    DEBUG_PRINT(std::cout << "Number of comparisons: " << g_count << std::endl);
+    printContainerSingles(sorted);
+
 
 }
