@@ -20,8 +20,28 @@ template <typename T>
 void printContainerSingles(T sequence, std::string msg="")
 {
     std::cout << msg;
+    int i = 1;
+    bool shorten = false;
+    if (sequence.size() > 5)
+        shorten = true;
+    #ifdef DEBUG
     for (typename T::iterator it = sequence.begin(); it != sequence.end(); ++it)
-        std::cout << *it << ", ";
+    {
+        std::cout << *it << " ";
+    }
+    (void)i;
+    #else
+    for (typename T::iterator it = sequence.begin(); it != sequence.end(); ++it)
+    {
+        if (shorten && i > 4)
+        {
+            std::cout << "[...]";
+            break;
+        }
+        std::cout << *it << " ";
+        i++;
+    }
+    #endif
     std::cout << std::endl;
 }
 

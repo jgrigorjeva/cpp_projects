@@ -36,7 +36,6 @@ std::vector<int> getSortedIndicesVec(std::vector<int> &unsorted)
     }
     else if (unsorted.size() == 2)
     {
-        // printContainerSingles(unsorted, "*** again, the unsorted vector with the least elements: ");
         if (unsorted[0] < unsorted[1])
         {
             sorted.push_back(0);
