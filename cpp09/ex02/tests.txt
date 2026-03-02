@@ -1,0 +1,5 @@
+// run the test on 21 random numbers for 1000 times, collect the number of comparisons and calculate the minimum, maximum, and the mean value
+for i in {1..1000}; do ./PmergeMe `shuf -i 1-100000 -n 21 | tr "\n" " "` ; done | grep -oP 'comparisons: \K\d+' | awk '{sum+=$1; if(NR==1){min=max=$1}} $1<min{min=$1} $1>max{max=$1} END{print "Min:", min, "Max:", max, "Mean:", sum/NR}'
+
+// use the ford-johnson-tester.py:
+python3 ford-johnson-tester.py --executable=./PmergeMe --times=1000 --ranges=1-22 //adjust the ranges to test shorter or longer sequences
