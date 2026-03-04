@@ -12,7 +12,6 @@
 #include <algorithm>
 
 bool parseInput(char *arg, std::vector<int> &sequence);
-// void printContainerSingles(std::vector<int> sequence);
 bool inputInvalid(std::vector<int> sequence);
 bool duplicatesFound(std::vector<int> sequence);
 
