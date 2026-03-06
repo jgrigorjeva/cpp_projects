@@ -23,9 +23,31 @@ class BitcoinExchange
     ~BitcoinExchange();
 
     int getExchangeRate(std::string);
+    class NoEarlierDateException : public std::exception 
+    {
+        public:
+        const char*		what() const throw();
+    };
 
 };
 
-std::time_t stringToTimestamp(std::string);
+std::time_t stringToTimestamp(std::string&);
+class IncorrectDateException : public std::exception 
+{
+    public:
+    const char*		what() const throw();
+};
+
+class NegativeValueException : public std::exception 
+{
+    public:
+    const char*		what() const throw();
+};
+
+class TooLargeValueException : public std::exception 
+{
+    public:
+    const char*		what() const throw();
+};
 
 #endif
