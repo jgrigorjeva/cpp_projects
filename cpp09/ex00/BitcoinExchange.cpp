@@ -33,7 +33,7 @@ BitcoinExchange::BitcoinExchange(const std::string& filename)
         }
         catch(const std::exception& e)
         {
-            std::cerr << e.what() << '\n';
+            std::cerr << e.what() << " >> " << date << '\n';
         }
         
         
@@ -71,10 +71,11 @@ int BitcoinExchange::getExchangeRate(std::string dateStr)
     }
         
     
-    // std::cout << "for date: " << dateStr << ", this rate was found: " << it->second << std::endl;
+    std::cout << "for date: " << dateStr << ", this rate was found: " << it->second << std::endl;
     return it->second;    
 }
-
+static bool dateIncorrect(struct tm date);
+static bool isLeapYear(int year);
 
 std::time_t stringToTimestamp(std::string& line)
 {
@@ -94,9 +95,8 @@ std::time_t stringToTimestamp(std::string& line)
     date.tm_min = 0;
     date.tm_sec = 0;
     // date.tm_isdst = 0; // Not daylight saving
-    if (date.tm_mon < 0 || date.tm_mon > 12 || date.tm_mday < 0 || date.tm_mday > 31)
+    if (dateIncorrect(date))
         throw IncorrectDateException();
-    // std::cout << std::asctime(&date);
     
     timestamp = mktime(&date);
     // std::cout << "timestamp: " << timestamp << std::endl;
@@ -121,4 +121,16 @@ const char* TooLargeValueException::what() const throw()
 const char* BitcoinExchange::NoEarlierDateException::what() const throw()
 {
     return ("No previous database entry exists for this date");
+}
+
+static bool isLeapYear(int year)
+{
+    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+}
+
+static bool dateIncorrect(struct tm date)
+{
+    return (date.tm_mon +1 < 0 || date.tm_mon +1 > 12 || date.tm_mday < 0 || date.tm_mday > 31) || 
+    ((date.tm_mon +1 == 4 || date.tm_mon +1 == 6 || date.tm_mon +1 == 9 || date.tm_mon +1 == 11) && date.tm_mday == 31) ||
+    (date.tm_mon +1 == 2 && ((!isLeapYear(date.tm_year + 1900) && date.tm_mday > 28) || (isLeapYear(date.tm_year + 1900) && date.tm_mday > 29)));
 }
