@@ -28,12 +28,15 @@ int main(int argc, char **argv)
         try
         {
             size_t pipePos = line.find('|');
+            if (pipePos == std::string::npos || pipePos == line.size() - 1)
+                throw BadInputException();
             if (pipePos == 11)
             {
                 date = line.substr(0, 10);
                 // std::cout << "date: "  << date <<std::endl;
                 // handle errors if rate is missing
-                // if (line.substr(pipePos + 2) ) // skip spaces, check digits, '-' '.', do atof and compare
+                if (valIsMissing(line.substr(pipePos + 2)))
+                    throw BadInputException();
                 value = std::atof(line.substr(pipePos + 2).c_str());
                 if (value < 0)
                     throw NegativeValueException();
@@ -52,18 +55,18 @@ int main(int argc, char **argv)
         
     }
 
-    try
-    {
-        database.getExchangeRate("2022-03-25");
-        database.getExchangeRate("2022-03-26");
-        // database.getExchangeRate("2009-01-01");
-        database.getExchangeRate("2009-02-29");
-    }
-    catch(const std::exception& e)
-    {
-        // may add a line directing to the corresponding date in the sheet
-        std::cerr << e.what() << '\n';
-    }
+    // try
+    // {
+    //     database.getExchangeRate("2022-03-25");
+    //     database.getExchangeRate("2022-03-26");
+    //     // database.getExchangeRate("2009-01-01");
+    //     database.getExchangeRate("2009-02-29");
+    // }
+    // catch(const std::exception& e)
+    // {
+    //     // may add a line directing to the corresponding date in the sheet
+    //     std::cerr << e.what() << '\n';
+    // }
     
     
     (void)database;

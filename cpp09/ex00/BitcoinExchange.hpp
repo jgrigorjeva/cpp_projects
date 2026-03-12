@@ -8,6 +8,7 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
+#include  <cstring>
 
 
 class BitcoinExchange
@@ -32,6 +33,9 @@ class BitcoinExchange
 };
 
 std::time_t stringToTimestamp(std::string&);
+bool valIsMissing(std::string dateStr);
+
+
 class IncorrectDateException : public std::exception 
 {
     public:
@@ -45,6 +49,12 @@ class NegativeValueException : public std::exception
 };
 
 class TooLargeValueException : public std::exception 
+{
+    public:
+    const char*		what() const throw();
+};
+
+class BadInputException : public std::exception 
 {
     public:
     const char*		what() const throw();

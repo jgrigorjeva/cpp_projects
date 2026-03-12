@@ -20,11 +20,16 @@ BitcoinExchange::BitcoinExchange(const std::string& filename)
         try
         {
             size_t commaPos = line.find(',');
+            if (commaPos == std::string::npos || commaPos == line.size() - 1)
+                throw BadInputException();
+
             if (commaPos != std::string::npos)
             {
                 date = line.substr(0, commaPos);
                 // std::cout << "date: "  << date <<std::endl;
                 // handle errors if rate is missing
+                if (valIsMissing(line.substr(commaPos + 1)))
+                    throw BadInputException();
                 rate = std::atof(line.substr(commaPos + 1).c_str());
                 timestamp = stringToTimestamp(date);
                 database.insert(std::make_pair(timestamp, rate));
@@ -88,19 +93,33 @@ std::time_t stringToTimestamp(std::string& line)
         throw IncorrectDateException();
     }
     // std::cout << "string date: " << line << std::endl;
+    std::memset(&date, 0, sizeof(struct tm));
     date.tm_year = std::atoi(line.substr(0,4).c_str()) - 1900;
     date.tm_mon = std::atoi(line.substr(5, 2).c_str()) - 1;
     date.tm_mday = std::atoi(line.substr(8).c_str());
     date.tm_hour = 0;
     date.tm_min = 0;
     date.tm_sec = 0;
-    // date.tm_isdst = 0; // Not daylight saving
+    date.tm_isdst = 0; // Not daylight saving
     if (dateIncorrect(date))
         throw IncorrectDateException();
     
     timestamp = mktime(&date);
     // std::cout << "timestamp: " << timestamp << std::endl;
     return timestamp;
+}
+
+
+static bool isLeapYear(int year)
+{
+    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+}
+
+static bool dateIncorrect(struct tm date)
+{
+    return (date.tm_mon +1 < 0 || date.tm_mon +1 > 12 || date.tm_mday < 0 || date.tm_mday > 31) || 
+    ((date.tm_mon +1 == 4 || date.tm_mon +1 == 6 || date.tm_mon +1 == 9 || date.tm_mon +1 == 11) && date.tm_mday == 31) ||
+    (date.tm_mon +1 == 2 && ((!isLeapYear(date.tm_year + 1900) && date.tm_mday > 28) || (isLeapYear(date.tm_year + 1900) && date.tm_mday > 29)));
 }
 
 // exceptions
@@ -118,19 +137,33 @@ const char* TooLargeValueException::what() const throw()
     return ("Error: too large a number.");
 }
 
+const char* BadInputException::what() const throw()
+{
+    return ("Error: bad input");
+}
+
 const char* BitcoinExchange::NoEarlierDateException::what() const throw()
 {
     return ("No previous database entry exists for this date");
 }
 
-static bool isLeapYear(int year)
+bool valIsMissing(std::string valStr)
 {
-    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-}
-
-static bool dateIncorrect(struct tm date)
-{
-    return (date.tm_mon +1 < 0 || date.tm_mon +1 > 12 || date.tm_mday < 0 || date.tm_mday > 31) || 
-    ((date.tm_mon +1 == 4 || date.tm_mon +1 == 6 || date.tm_mon +1 == 9 || date.tm_mon +1 == 11) && date.tm_mday == 31) ||
-    (date.tm_mon +1 == 2 && ((!isLeapYear(date.tm_year + 1900) && date.tm_mday > 28) || (isLeapYear(date.tm_year + 1900) && date.tm_mday > 29)));
+    if (std::atof(valStr.c_str()) != 0)
+        return false;
+    int i = 0;
+    while (valStr[i] == ' ')
+        i++;
+    if (valStr[i] == '-')
+        i++;
+    while (valStr[i] == '0')
+        i++;
+    if (valStr[i] == '.')
+        i++;
+    while (valStr[i] == '0')
+        i++;
+    if (valStr[i] != '\0' && valStr[i] != ' ' )
+        return true;
+    return false;
+    
 }
