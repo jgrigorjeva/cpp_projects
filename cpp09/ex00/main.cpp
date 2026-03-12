@@ -23,31 +23,34 @@ int main(int argc, char **argv)
     // std::time_t timestamp;
 // 2011-01-03 | 3
     std::getline(input, line);
-    // while (std::getline(input, line))
-    // {
-    //     try
-    //     {
-    //         size_t pipePos = line.find('|');
-    //         if (pipePos == 11)
-    //         {
-    //             date = line.substr(0, 10);
-    //             // std::cout << "date: "  << date <<std::endl;
-    //             // handle errors if rate is missing
-    //             value = std::atof(line.substr(pipePos + 2).c_str());
-    //             if (value < 0)
-    //                 throw NegativeValueException();
-    //             else if (value > 1000)
-    //                 throw TooLargeValueException();
+    while (std::getline(input, line))
+    {
+        try
+        {
+            size_t pipePos = line.find('|');
+            if (pipePos == 11)
+            {
+                date = line.substr(0, 10);
+                // std::cout << "date: "  << date <<std::endl;
+                // handle errors if rate is missing
+                // if (line.substr(pipePos + 2) ) // skip spaces, check digits, '-' '.', do atof and compare
+                value = std::atof(line.substr(pipePos + 2).c_str());
+                if (value < 0)
+                    throw NegativeValueException();
+                else if (value > 1000)
+                    throw TooLargeValueException();
+                float rate = database.getExchangeRate(date);
+                std::cout << date << " => " << value << " * " << rate << " = " << value * rate << std::endl;
 
-    //         }
-    //     }
-    //     catch(const std::exception& e)
-    //     {
-    //         std::cerr << e.what() << '\n';
-    //     }
+            }
+        }
+        catch(const std::exception& e)
+        {
+            std::cerr << e.what() << " => " << date << '\n';
+        }
         
         
-    // }
+    }
 
     try
     {

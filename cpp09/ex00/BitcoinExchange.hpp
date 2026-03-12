@@ -22,7 +22,7 @@ class BitcoinExchange
     BitcoinExchange& operator=(BitcoinExchange& other);
     ~BitcoinExchange();
 
-    int getExchangeRate(std::string);
+    float getExchangeRate(std::string);
     class NoEarlierDateException : public std::exception 
     {
         public:

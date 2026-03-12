@@ -54,7 +54,7 @@ BitcoinExchange& BitcoinExchange::operator=(BitcoinExchange& other)
 
 BitcoinExchange::~BitcoinExchange(){}
 
-int BitcoinExchange::getExchangeRate(std::string dateStr)
+float BitcoinExchange::getExchangeRate(std::string dateStr)
 {
     time_t otherTm = stringToTimestamp(dateStr);
     std::map<std::time_t, float>::iterator it = database.lower_bound(otherTm);
@@ -71,7 +71,7 @@ int BitcoinExchange::getExchangeRate(std::string dateStr)
     }
         
     
-    std::cout << "for date: " << dateStr << ", this rate was found: " << it->second << std::endl;
+    // std::cout << "for date: " << dateStr << ", this rate was found: " << it->second << std::endl;
     return it->second;    
 }
 static bool dateIncorrect(struct tm date);
