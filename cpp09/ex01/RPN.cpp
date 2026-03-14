@@ -8,9 +8,9 @@ double calculateRPN(std::string expr)
     {
         if (expr[i] == ' ')
         {}
-        if (isdigit(expr[i]))
+        else if (isdigit(expr[i]))
             nstack.push(expr[i] - '0');
-        if (expr[i] == '+' || expr[i] == '-' || expr[i] == '*' || expr[i] == '/')
+        else if (expr[i] == '+' || expr[i] == '-' || expr[i] == '*' || expr[i] == '/')
         {
             if (nstack.size() < 2)
                 throw InvalidExpressionException();
@@ -36,8 +36,12 @@ double calculateRPN(std::string expr)
             default:
                 result = 0;
                 break;
-            }
+            }          
             nstack.push(result);
+        }
+        else
+        {
+            throw InvalidExpressionException();
         }
     }
     
