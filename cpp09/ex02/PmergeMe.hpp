@@ -5,7 +5,13 @@
 #include <deque>
 #include <utility>
 #include <iostream>
-#include "inputValidation.hpp" //for printing the single vector
+#include <set>
+#include <cerrno>
+#include <cstdlib>
+#include <iomanip>
+#include <string>
+#include <iterator>
+#include <algorithm>
 
 #ifdef DEBUG
 # define DEBUG_COUNT(x) x
@@ -16,6 +22,41 @@
 #endif
 
 extern volatile int g_count;
+
+// input validation
+bool parseInput(char *arg, std::vector<int> &sequence);
+bool inputInvalid(std::vector<int> sequence);
+bool duplicatesFound(std::vector<int> sequence);
+
+template <typename T>
+void printContainerSingles(T sequence, std::string msg="")
+{
+    std::cout << msg;
+    int i = 1;
+    bool shorten = false;
+    if (sequence.size() > 5)
+        shorten = true;
+    #ifdef DEBUG
+    for (typename T::iterator it = sequence.begin(); it != sequence.end(); ++it)
+    {
+        std::cout << *it << " ";
+    }
+    (void)i;
+    (void)shorten;
+    #else
+    for (typename T::iterator it = sequence.begin(); it != sequence.end(); ++it)
+    {
+        if (shorten && i > 4)
+        {
+            std::cout << "[...]";
+            break;
+        }
+        std::cout << *it << " ";
+        i++;
+    }
+    #endif
+    std::cout << std::endl;
+}
 
 std::vector<int> sortVector(std::vector<int> &unsorted);
 std::vector<int> getSortedIndicesVec(std::vector<int> &unsorted);
