@@ -3,8 +3,9 @@
 
 #include <stack>
 #include <iostream>
+#include <string>
 
-float getResult(std::string expr);
+double calculateRPN(std::string expr);
 
 // exceptions
 class InvalidExpressionException : public std::exception 

@@ -6,7 +6,7 @@ CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -MMD -MP
 NAME     = RPN
 
 # Source and object
-SRC      = main.cpp
+SRC      = main.cpp RPN.cpp
 OBJ_DIR  = obj
 OBJ      = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRC))
 DEP      = $(patsubst %.cpp,$(OBJ_DIR)/%.d,$(SRC))
